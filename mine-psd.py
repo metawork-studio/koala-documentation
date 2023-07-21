@@ -35,10 +35,14 @@ def save_images(layer, base_path):
 
         # Convert PNG to JPEG
         jpg_path = f'{path}.jpg'
-        print(f'Convert PNG -> JPG\n{png_path} -> {jpg_path}\n')
+        print(f'Convert PNG -> JPG\n{png_path} -> {jpg_path}')
         im = Image.open(png_path)
         rgb_im = im.convert('RGB')
         rgb_im.save(jpg_path)
+
+        # Remove a PNG file
+        print(f'Remove the PNG file\n{png_path}\n')
+        os.remove(png_path)
 
         return
 
