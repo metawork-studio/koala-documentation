@@ -1,0 +1,13 @@
+# Intellij IDEA
+.idea
+# Python virtual environments
+venv
+venv/*
+.venv
+.venv/*
+
+images/*
+!images/.gitkeep
+
+psd.psd
+/venv/
