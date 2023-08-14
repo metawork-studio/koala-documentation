@@ -9,5 +9,6 @@ venv/*
 images/*
 !images/.gitkeep
 
-psd.psd
+canvases/*
+!canvases/*.example.psd
 /venv/
