@@ -26,7 +26,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. The application uses a file with the `psd.psd` name. Add your own file or rename the exemplary `psd.example.psd` file for a quick demo. You will see a variety of directory structures.
+4. The application uses a file with the `canvases/mobile.psd` and `canvases/tablet.psd` names. Add your own file or rename the exemplary `canvases/{FORMAT}.example.psd` file for a quick demo. You will see a variety of directory structures.
 
 5. **Mine your PSD!**
 
