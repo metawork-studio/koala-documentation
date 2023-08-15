@@ -1,0 +1,57 @@
+<div class="row">
+
+  {% assign chapters = site.documentation | sort: "path" %}
+
+  {% assign row_id = '' %}
+
+  {% for chapter_part in chapters %}
+
+  {% assign documentation_url = chapter_part.path | split: '/' | reverse %}
+
+  {% assign tablet_columns_class = '' %}
+
+  {% if page.collection == 'tablet' %}
+  {% assign tablet_columns_class = 'col-xl-6' %}
+  {% else %}
+  {% assign tablet_columns_class = 'col-lg-4 col-xl-4' %}
+  {% endif %}
+
+  {% if chapter_part.path contains 'template-parts' %}
+
+  {% if chapter_part.order-in-chapter == page.order %}
+
+  {% if chapter_part.path contains 'title' %}
+
+  <div class="w-100"></div>
+  <div class="col-md-6">
+    {{ chapter_part.output }}
+  </div>
+  <div class="w-100"></div>
+  {% else %}
+  {% if row_id != documentation_url[1] %}
+
+  <div class="w-100"></div>
+
+  {% endif %}
+
+
+  <div class="col-md-6 {{ tablet_columns_class }} mb-40 ">
+
+    {% capture my_include %} {% include_relative {{chapter_part.path | replace: '_documentation/','' }} %}{%
+    endcapture
+    %}
+
+    {{ my_include | split: "---" | last | markdownify }}
+  </div>
+
+  {% endif %}
+
+  {% endif %}
+
+  {% endif %}
+
+  {% assign row_id = documentation_url[1] %}
+
+  {% endfor %}
+
+</div>
