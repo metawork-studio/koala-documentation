@@ -1,0 +1,74 @@
+
+{% if page.collection %}
+
+{% assign chapters = site[page.collection] | sort: 'order' %}
+
+{% for links in chapters %}
+
+{% unless links.hidden == true %}
+
+{% unless links.path contains 'template-parts' %}
+
+{% if links.title == page.title %}
+
+{% unless forloop.first %}
+
+{% assign prev_chapter_url = prev.url %}
+{% assign prev_chapter_title = prev.title %}
+{% assign prev_chapter_order = prev.order %}
+
+{% endunless %}
+
+{% unless forloop.last %}
+
+{% assign next = chapters[forloop.index] %}
+{% assign next_chapter_url = next.url %}
+{% assign next_chapter_title = next.title %}
+{% assign next_chapter_order = next.order %}
+
+{% endunless %}
+
+{% endif %}
+
+{% assign prev = links %}
+
+{% endunless %}
+{% endunless %}
+
+{% endfor %}
+
+<div class="documentation-navigation">
+  <div style="text-align: left;">
+    {% if prev_chapter_url %}
+    <a class="prev" href="{{ prev_chapter_url | relative_url}}">
+      <u>
+        Previous chapter
+      </u>
+      <div style="font-size: 16px;">
+        {{prev_chapter_order}}. {{ prev_chapter_title }}
+      </div>
+    </a>
+    {% endif %}
+  </div>
+  <div>
+    <a href="{{ page.collection | relative_url }}#documentation-items">
+      <u>
+        Return to menu
+      </u>
+    </a>
+  </div>
+  <div style="text-align: right;">
+    {% if next_chapter_url %}
+    <a class="next" href="{{ next_chapter_url | relative_url}}">
+      <u>
+        Next chapter
+      </u>
+      <div style="font-size: 16px;">
+        {{next_chapter_order}}. {{ next_chapter_title }}
+      </div>
+    </a>
+    {% endif %}
+  </div>
+</div>
+
+{% endif %}
