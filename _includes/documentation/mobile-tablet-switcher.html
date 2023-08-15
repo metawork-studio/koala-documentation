@@ -1,0 +1,22 @@
+<div class="documentation-single-article-header-switcher">
+
+  {% if page.collection == 'tablet' %}
+
+  {% assign another_page_url = page.url | replace: '/tablet/','/mobile/' %}
+  {% assign current_page_title = page.collection %}
+  {% assign current_page_img = '/assets/images/icons-smartphone.png' %}
+  {% assign another_page_title = page.collection | replace: 'tablet','mobile' %}
+
+  {% elsif page.collection == 'mobile' %}
+
+  {% assign another_page_url = page.url | replace: '/mobile/','/tablet/' %}
+  {% assign current_page_title = page.collection %}
+  {% assign another_page_title = page.collection | replace: 'mobile','tablet' %}
+
+  {% endif %}
+
+  <a class="documentation-single-article-header-switcher-item" href="{{ another_page_url  | relative_url  }}">
+    Switch to <span style="text-transform: capitalize; font-weight: 400; text-decoration: underline;">{{ another_page_title }}</span>
+    version
+  </a>
+</div>

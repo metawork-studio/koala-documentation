@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+
+{%- include head.html -%}
+
+<body style="--background_image: url({{ site.baseurl }}/assets/images/bg.png);">
+
+{%- include header.html -%}
+
+<main class="page-content" aria-label="Content">
+  <div class="container">
+    {{ content }}
+  </div>
+</main>
+
+{%- include footer.html -%}
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+<script>
+  Fancybox.bind("[data-fancybox]");
+</script>
+
+</body>
+
+</html>

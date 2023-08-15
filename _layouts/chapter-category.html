@@ -1,0 +1,31 @@
+---
+layout: base
+---
+
+<div class="home">
+
+  {% assign chapters = site[page.collection] | sort: 'order' %}
+
+  <div class="documentation-items-wrapper">
+    <div id="documentation-items" class="documentation-items">
+
+      {% for chapter in chapters %}
+
+      {% unless chapter.url contains 'template-parts' %}
+
+      {% unless chapter.hidden == true %}
+
+      <div class="documentation-item">
+        <a href="{{ chapter.url | relative_url }}">
+          {{chapter.order}}. {{ chapter.title }}
+        </a>
+      </div>
+
+      {% endunless %}
+
+      {% endunless %}
+
+      {% endfor %}
+    </div>
+  </div>
+</div>

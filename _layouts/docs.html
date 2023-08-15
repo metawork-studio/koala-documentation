@@ -1,0 +1,33 @@
+---
+layout: base
+---
+
+<article class="post documentation-single-article">
+  <div class="documentation-single-article-header">
+    <div>
+      <h1 class="post-title">{{ page.order }}. {{ page.title | escape }}</h1>
+    </div>
+    <div class="documentation-single-article-header-menu">
+
+      {%- include documentation/mobile-tablet-switcher.html -%}
+
+      <a href="{{ page.collection | relative_url }}#documentation-items">
+        <u>
+          Return to menu
+        </u>
+      </a>
+    </div>
+  </div>
+  <div class="documentation-content post-content">
+
+    {{ page.description }}
+
+    {{ content }}
+
+    {%- include documentation/body.html -%}
+
+  </div>
+</article>
+
+
+{%- include documentation/pagination.html -%}
