@@ -21,9 +21,21 @@ SRC_FILES = MappingProxyType({
 IMAGE_DIR = 'images'
 
 
-class App:
+class PSDMining:
+    def __init__(self):
+        self.file_list = []
+
+    # Is a layer is the group(folder)
     def is_group(self, layer):
         return isinstance(layer, Group) or isinstance(layer, PSDImage)
+
+    # Does a group layer has PixelLayers
+    def has_layer(self, group):
+        for sub_layer in group:
+            if isinstance(sub_layer, PixelLayer):
+                return True
+
+        return False
 
     def save_images(self, layer, base_path, format):
         # Save a layer as an image
@@ -43,6 +55,7 @@ class App:
 
             path = f'{path}/{name}'
             png_path = f'{path}.png'
+            self.file_list.append(path)
             print(f'Save a layer into the\n{png_path}')
             layer_image = layer.composite()
             layer_image.save(png_path, mode='r+w+b')
@@ -62,6 +75,10 @@ class App:
 
         # Create a directory from a group
         if self.is_group(layer):
+            # Separate file lists with the separator only if a group has pixel layers
+            if self.has_layer(layer._layers):
+                self.file_list.append('----------------------')
+
             for sub_layer in layer:
                 name = f'/{sub_layer.name}' if self.is_group(sub_layer) else ''
                 path = f'{base_path}{name}'
@@ -87,9 +104,9 @@ class App:
             pathlib.Path(f.path).unlink()
 
 
-app = App()
-
 for format, file_path in SRC_FILES.items():
+    psd_mining = PSDMining()
+
     if not os.path.exists(file_path):
         print(f'Cannot find the "{file_path}"!')
         exit(1)
@@ -98,4 +115,7 @@ for format, file_path in SRC_FILES.items():
 
     psd = PSDImage.open(file_path)
 
-    app.save_images(psd, IMAGE_DIR, format=format)
+    psd_mining.save_images(psd, IMAGE_DIR, format=format)
+
+    with open(f"{IMAGE_DIR}/{format}-file-list.txt", 'w') as f:
+        f.write("\n".join(psd_mining.file_list) + '\n')
