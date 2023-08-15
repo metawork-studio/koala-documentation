@@ -119,5 +119,3 @@ for format, file_path in SRC_FILES.items():
 
     with open(f"{IMAGE_DIR}/{format}-file-list.txt", 'w') as f:
         f.write("\n".join(psd_mining.file_list) + '\n')
-
-    pprint("\n".join(psd_mining.file_list))
