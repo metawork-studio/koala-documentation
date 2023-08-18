@@ -39,3 +39,14 @@ python mine-psd.py
 ```shell
 pip freeze > requirements.txt
 ```
+
+# Ruby installation
+
+Gem list
+
+- jekyll
+- bundler
+- webrick
+- jekyll-toc
+- jekyll-seo-tag
+- jekyll-feed
