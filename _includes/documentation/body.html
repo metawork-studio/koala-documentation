@@ -11,12 +11,12 @@
   {% assign tablet_columns_class = '' %}
 
   {% if page.collection == 'tablet' %}
-  {% assign tablet_columns_class = 'col-xl-6' %}
+  {% assign tablet_columns_class = 'col-xl-4' %}
   {% else %}
   {% assign tablet_columns_class = 'col-lg-4 col-xl-4' %}
   {% endif %}
 
-  {% if chapter_part.path contains 'template-parts' %}
+  {% if chapter_part.path contains 'chapters' %}
 
   {% if chapter_part.order-in-chapter == page.order %}
 

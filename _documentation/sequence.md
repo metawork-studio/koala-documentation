@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: chapter
 title: Sequence
 order: 5
 description:
