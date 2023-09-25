@@ -2,7 +2,9 @@
 order-in-chapter: 3
 ---
 
-[![Copy]({{ site.baseurl }}/assets/images/3/IMG_8153.png)
-]({{ site.baseurl }}/assets/images/3/IMG_8153.png)
+[![Swap pads]({{ site.baseurl }}/assets/images/3/IMG_7661.png)]({{ site.baseurl
+}}/assets/images/3/IMG_7661.png)
 
-Copy
+Swap pads
+
+If the pad you're copying already has a sample, you can choose between swapping, merging or replacing it.

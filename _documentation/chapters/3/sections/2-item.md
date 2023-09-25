@@ -1,8 +1,10 @@
 ---
-order-in-chapter: 3
+order-in-chapter: 2
 ---
 
-[![Swap pads]({{ site.baseurl }}/assets/images/3/IMG_7661.png)]({{ site.baseurl
-}}/assets/images/3/IMG_7661.png)
+[![Copy]({{ site.baseurl }}/assets/images/3/IMG_8153.png)
+]({{ site.baseurl }}/assets/images/3/IMG_8153.png)
 
-Swap pads
+Copy
+
+Tap and drag a pad with a sample to any free pag to copy it.

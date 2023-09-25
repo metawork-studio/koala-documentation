@@ -12,4 +12,6 @@ order-in-chapter: 2
 
 Sample
 
-Screen for assigning sounds to pads, as well as adding and editing your samples.
+Add, edit, record and resample your chops here. Use input controls to select and process your source, tap any of the 16 pads to start recording. Tap on any pad with sample to bring up the sample editor and play it back. 
+
+Every sample has a mix section in the editor. Use it to EQ the sample and assign it to one of the BUS or output channels (AUv3).

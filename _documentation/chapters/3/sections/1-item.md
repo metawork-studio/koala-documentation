@@ -1,5 +1,5 @@
 ---
-order-in-chapter: 3
+order-in-chapter: 1
 ---
 
 {% flexible_image link="/3/IMG_7725.png" alt="Slide up to trash" %}
