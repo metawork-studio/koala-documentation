@@ -12,6 +12,10 @@ order-in-chapter: 2
 
 Sample
 
-Add, edit, record and resample your chops here. Use input controls to select and process your source, tap any of the 16 pads to start recording. Tap on any pad with sample to bring up the sample editor and play it back. 
+Input monitor button, input volume meter, input FX and input selector on top. 16 pads over four banks (A,B,C,D) at the bottom. Sample editor and mixer in the middle of the screen.
+
+Add, edit, record and resample your chops here. 
+
+Use input controls to select and process your audio source, tap any of the 16 pads to start recording. Tap on any pad with sample to bring up the sample editor. 
 
 Every sample has a mix section in the editor. Use it to EQ the sample and assign it to one of the BUS or output channels (AUv3).
