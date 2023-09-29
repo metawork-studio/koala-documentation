@@ -11,8 +11,8 @@ order-in-chapter: 2
 
 Perform
 
-Hit play, switch between patterns and perform with live FX. 
+Hit play, switch between patterns and use live FX to spice up your track. 
 
-Tap hold button at the bottom to lock settings for any or all 16 FX. Tap on mixer selector to bring up Koala's mixer. 
+Tap hold button at the bottom to lock settings for any of the 16 FX. Tap on mixer selector to bring up Koala's powerful mixer. 
 
-Mixer offers 4 BUS and a master channel, with 5 effect slots on each of them.
+Mixer offers 4 BUS channels and one main channel, with 5 effect slots on each of them.

@@ -2,9 +2,10 @@
 order-in-chapter: 3
 ---
 
-[![Swap pads]({{ site.baseurl }}/assets/images/3/IMG_7661.png)]({{ site.baseurl
-}}/assets/images/3/IMG_7661.png)
+## Resampling
 
-Swap pads
+Switch the input source to resample from app. 
 
-If the pad you're copying already has a sample, you can choose between swapping, merging or replacing it.
+Tap and hold any empty pad to start recording. Press a bunch of other pads with samples. Release the recording pad. You just resampled!
+
+To resample a sequence while performing the live FX, switch off the tap to record setting. See general settings for more info.
