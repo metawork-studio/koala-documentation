@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Basic ops (quick start guide with essential tips)
+title: Quick Start
 order: 3
 description:
 ---

@@ -2,7 +2,8 @@
 
 ---
 
-Koala is the ultimate sampler for phones and tablets. Record anything with the mic of your device instantly or import
-your own sounds.
+Koala is a multi-platform, fun and powerful sampler. Record with the mic of your phone or tablet, import audio and videosound, sequence or resample your ideas and screen record performances with unparalleled immediacy.
 
-Koala has a powerful sequencer and FX bank with 16 live effects to apply while playing out your song.
+Koala loads up to 64 samples, with 16 sequencer slots and 16 multitouch Live FX. 
+
+Koala's mixer adds 4 buses and a master channel stripe, with 5 additional FX slots each, including sidechain.
