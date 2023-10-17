@@ -14,7 +14,8 @@ description: >
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-toc
+
+
 
 # Theme-specific settings
 
@@ -53,28 +54,20 @@ minima:
 #
 # show_excerpts: false
 
-# TOC Settings
-toc:
-  min_level: 1
-  max_level: 3
-  list_class: toc
-  list_class: toc__list
-  sublist_class: toc__sublist
-
 #kramdown:
 #  parse_block_html: true
+
 
 collections:
   documentation:
     output: false
-#    permalink: /:collection/:path/
+  #    permalink: /:collection/:path/
 
   mobile:
     output: true
-#    permalink: /:collection/:path/
+  #    permalink: /:collection/:path/
   tablet:
     output: true
 #    permalink: /:collection/:path/
 
-#markdown: kramdown
 permalinks: pretty
