@@ -1,57 +1,77 @@
 <div class="row">
-
-  {% assign chapters = site.documentation | sort: "path" %}
-
-  {% assign row_id = '' %}
+  {% assign chapters = site[page.collection] | sort: "path" %}
+  {% assign current_chapter_group = "" %}
 
   {% for chapter_part in chapters %}
-
   {% assign documentation_url = chapter_part.path | split: '/' | reverse %}
+  {% assign chapter_url = chapter_part.path | split: '/' %}
+  {% assign chapter_number = chapter_url[2] | split: '-' %}
+  {% assign chapter_number_order = chapter_number[0] | plus: 0 %}
 
-  {% assign tablet_columns_class = '' %}
+  {% assign chapter_column_class = '' %}
 
   {% if page.collection == 'tablet' %}
-  {% assign tablet_columns_class = 'col-xl-6' %}
-  {% else %}
-  {% assign tablet_columns_class = 'col-lg-4 col-xl-4' %}
+  {% assign chapter_column_class = 'col-xl-4' %}
   {% endif %}
 
-  {% if chapter_part.path contains 'template-parts' %}
+  {% if page.collection == 'mobile' %}
+  {% assign chapter_column_class = 'col-lg-4 col-xl-4' %}
+  {% endif %}
 
-  {% if chapter_part.order-in-chapter == page.order %}
+  {% if chapter_part.path contains 'chapters' %}
 
-  {% if chapter_part.path contains 'title' %}
+  {% assign chapter_name = documentation_url[0]; %}
+
+  {% if chapter_number_order == page.order %}
+
+  {% if chapter_name contains 'title' %}
 
   <div class="w-100"></div>
   <div class="col-md-6">
-    {{ chapter_part.output }}
+
+    {% capture render_chapters_title %}
+    {% if page.collection == 'mobile' %}
+    {% include_relative {{chapter_part.path | replace: '_mobile/', '' }} %}
+    {% endif %}
+    {% if page.collection == 'tablet' %}
+    {% include_relative {{chapter_part.path | replace: '_tablet/', '' }} %}
+    {% endif %}
+    {% endcapture %}
+
+    {{ render_chapters_title | split: "---" | last | markdownify }}
+
   </div>
   <div class="w-100"></div>
+
   {% else %}
-  {% if row_id != documentation_url[1] %}
 
-  <div class="w-100"></div>
+  {% if current_chapter_group != documentation_url[1] %}
+
+  <div class="w-100 123321"></div>
 
   {% endif %}
 
+  <div class="col-md-6 {{ chapter_column_class }} mb-40 ">
 
-  <div class="col-md-6 {{ tablet_columns_class }} mb-40 ">
+    {% capture render_chapters %}
+    {% if page.collection == 'mobile' %}
+    {% include_relative {{chapter_part.path | replace: '_mobile/', '' }} %}
+    {% endif %}
+    {% if page.collection == 'tablet' %}
+    {% include_relative {{chapter_part.path | replace: '_tablet/', '' }} %}
+    {% endif %}
+    {% endcapture %}
 
-    {% capture my_include %} {% include_relative {{chapter_part.path | replace: '_documentation/','' }} %}{%
-    endcapture
-    %}
-
-    {{ my_include | split: "---" | last | markdownify }}
+    {{ render_chapters | split: "---" | last | markdownify }}
   </div>
 
-  {% endif %}
+  {% assign current_chapter_group = documentation_url[1] %}
 
   {% endif %}
 
   {% endif %}
 
-  {% assign row_id = documentation_url[1] %}
+  {% endif %}
 
   {% endfor %}
-
 </div>

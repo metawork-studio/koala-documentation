@@ -1,0 +1,53 @@
+---
+---
+
+- {PICS} funny cross
+- Really??? --> Click the cross in the upper right corner.
+- [ UI ]
+- // play
+- // rec
+- // bpm
+- // +
+- // -
+- // tap
+- // beat per bar (time signature)
+- // quantize
+- // swing
+- // metronome
+- // pattern
+- // pattern navigation bank
+- piano roll
+- (())
+- // play
+- // rec
+- (())
+- // bars (pattern lenght)
+- (())
+- // triggering modes
+- // grid mode
+- // keybord mode
+- // note repeat
+- // scales
+- // vel
+- // writing modes
+- // add event
+- // adjust velocity
+- // adjust chance
+- // step sequencer
+- // snap grid
+- // undo
+- // redo
+- // triggering modes
+- // grid mode
+- // keybord mode
+- // note repeat
+- // scales
+- // vel
+- // undo
+- // clear
+- // bars (pattern lenght)
+- // pads bank
+- // pads
+- // pads bank
+-
+- // file picker
