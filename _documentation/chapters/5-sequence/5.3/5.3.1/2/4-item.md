@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 5
 ---
 
 { PICS } / img `"PLAY vs REC"` + `"Stop" pictogram"`

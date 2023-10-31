@@ -1,5 +1,4 @@
 ---
-
 ---
 
 ![Understand the time-stretching]({{ site.baseurl }}/assets/images/placeholder.png)

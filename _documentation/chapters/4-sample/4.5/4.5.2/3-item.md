@@ -1,5 +1,4 @@
 ---
-
 ---
 
 [![Choose an auto-chop type]({{ site.baseurl }}/assets/images/4/4-5-2/IMG_79322-(51).jpg)]({{

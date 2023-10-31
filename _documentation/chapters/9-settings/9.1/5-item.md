@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 9
 ---
 
 [![Pitch knob snap to semitone]({{ site.baseurl }}/assets/images/9/9-1/IMG_7941-1.png)]({{

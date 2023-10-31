@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 9
 ---
 
 [![Use MIDI mapping]({{ site.baseurl }}/assets/images/9/9-3/IMG_7936-1-(15).png)]({{

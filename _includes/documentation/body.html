@@ -8,48 +8,50 @@
   {% assign chapter_number = chapter_url[2] | split: '-' %}
   {% assign chapter_number_order = chapter_number[0] | plus: 0 %}
 
-  {% assign chapter_subgroup = chapter_url[3] | split: '-' %}
-  {% assign subgroup = chapter_subgroup[0] | append: '-' | append: chapter_subgroup[1] | append: '-' | append:
-  chapter_subgroup[2] | append: '-' | append: chapter_subgroup[3] %}
-
-  {% assign first_three_parts = chapter_url[3] | split: '-' | slice: 0, 3 %}
-  {% assign all_numbers = first_three_parts | join: '' %}
-
-  {% assign is_sub_chapter = all_numbers | plus: 0 %}
-
-  {% capture is_sub_chapter %}{{is_sub_chapter}}{% endcapture %}
-
-  {% assign columns_class = '' %}
+  {% assign chapter_column_class = '' %}
 
   {% if page.collection == 'tablet' %}
-  {% assign columns_class = 'col-xl-4' %}
+  {% assign chapter_column_class = 'col-xl-4' %}
   {% endif %}
 
   {% if page.collection == 'mobile' %}
-  {% assign columns_class = 'col-lg-4 col-xl-4' %}
+  {% assign chapter_column_class = 'col-lg-4 col-xl-4' %}
   {% endif %}
 
   {% if chapter_part.path contains 'chapters' %}
 
+  {% assign chapter_name = documentation_url[0]; %}
+
   {% if chapter_number_order == page.order %}
 
-  {% if chapter_part.path contains 'title' %}
+  {% if chapter_name contains 'title' %}
 
   <div class="w-100"></div>
   <div class="col-md-6">
-    {{ chapter_part.output }}
+
+    {% capture render_chapters_title %}
+    {% if page.collection == 'mobile' %}
+    {% include_relative {{chapter_part.path | replace: '_mobile/', '' }} %}
+    {% endif %}
+    {% if page.collection == 'tablet' %}
+    {% include_relative {{chapter_part.path | replace: '_tablet/', '' }} %}
+    {% endif %}
+    {% endcapture %}
+
+    {{ render_chapters_title | split: "---" | last | markdownify }}
+
   </div>
   <div class="w-100"></div>
 
   {% else %}
 
-  {% if all_numbers == is_sub_chapter %}
-  {% if subgroup != current_chapter_group %}
-  <div class="w-100 123"></div>
-  {% endif %}
+  {% if current_chapter_group != documentation_url[1] %}
+
+  <div class="w-100 123321"></div>
+
   {% endif %}
 
-  <div class="col-md-6 {{ columns_class }} mb-40 ">
+  <div class="col-md-6 {{ chapter_column_class }} mb-40 ">
 
     {% capture render_chapters %}
     {% if page.collection == 'mobile' %}
@@ -63,7 +65,7 @@
     {{ render_chapters | split: "---" | last | markdownify }}
   </div>
 
-  {% assign current_chapter_group = subgroup %}
+  {% assign current_chapter_group = documentation_url[1] %}
 
   {% endif %}
 

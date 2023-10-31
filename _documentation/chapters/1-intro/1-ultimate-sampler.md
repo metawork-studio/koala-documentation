@@ -1,5 +1,4 @@
 ---
-
 ---
 
 Koala is a multi-platform, fun and powerful sampler. Record with the mic of your phone or tablet, import audio and videosound, sequence or resample your ideas and screen record performances with unparalleled immediacy.

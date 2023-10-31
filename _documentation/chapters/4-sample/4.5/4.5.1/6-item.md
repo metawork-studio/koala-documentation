@@ -1,5 +1,4 @@
 ---
-
 ---
 
 **6. Description of stretch algorithms**

@@ -1,5 +1,4 @@
 ---
-
 ---
 
 [![Activate time stretch]({{ site.baseurl }}/assets/images/4/4-5/IMG_79322-(40).jpg)]({{

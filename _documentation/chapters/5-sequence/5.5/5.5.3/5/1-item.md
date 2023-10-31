@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 5
 ---
 
 **5. Determine a triggering chance**

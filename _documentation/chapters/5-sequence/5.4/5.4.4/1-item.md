@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 5
 ---
 
 > Note: Velocity is only available in "KEYBOARD" and "NOTE REPEAT" modes."

@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 9
 ---
 
 ![]({{ site.baseurl }}/assets/images/placeholder.png)

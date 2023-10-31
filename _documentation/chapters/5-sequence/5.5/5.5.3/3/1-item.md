@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 5
 ---
 
 **3. Snap to grid (Quantization)**

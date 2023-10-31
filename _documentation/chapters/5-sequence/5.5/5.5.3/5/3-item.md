@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 5
 ---
 
 > Note: chance is illustrated with a dice pictogram.

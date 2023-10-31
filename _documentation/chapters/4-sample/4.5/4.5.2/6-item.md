@@ -1,5 +1,4 @@
 ---
-
 ---
 
 ![Preview chop]({{ site.baseurl }}/assets/images/placeholder.png)

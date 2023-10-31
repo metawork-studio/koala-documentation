@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 5
 ---
 
 **4. Adjust the velocity**

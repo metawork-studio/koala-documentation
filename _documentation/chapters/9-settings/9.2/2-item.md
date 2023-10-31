@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 9
 ---
 
 [![Background audio]({{ site.baseurl }}/assets/images/9/9-2/IMG_7943-2.png)]({{

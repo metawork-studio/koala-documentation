@@ -1,5 +1,4 @@
 ---
-
 ---
 
 Koala can be used as a standalone app, AUv3 instrument or AUv3 8-channel multi-bus effect unit in apps like AUM, Garageband or Logic Pro.

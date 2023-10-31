@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 7
 ---
 
 --help

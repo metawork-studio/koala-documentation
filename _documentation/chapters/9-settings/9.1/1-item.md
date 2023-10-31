@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 9
 ---
 
 [![One shot enabled by default]({{ site.baseurl }}/assets/images/9/9-1/IMG_7936-1.png)]({{

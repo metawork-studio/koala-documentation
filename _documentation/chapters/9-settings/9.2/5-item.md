@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 9
 ---
 
 [![Metronome volume]({{ site.baseurl }}/assets/images/9/9-2/IMG_7943-6.png)]({{

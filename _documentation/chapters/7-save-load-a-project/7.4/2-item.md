@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 7
 ---
 
 [![Save a project]({{ site.baseurl }}/assets/images/7/7-4/IMG_7936-1-(27).png)]({{

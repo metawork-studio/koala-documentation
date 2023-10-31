@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 9
 ---
 
 [![Koala version]({{ site.baseurl }}/assets/images/9/9-4/IMG_7936-1-(21).png)]({{

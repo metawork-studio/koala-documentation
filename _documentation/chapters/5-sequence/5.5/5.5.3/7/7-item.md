@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 5
 ---
 
 **7. Zoom in / out**

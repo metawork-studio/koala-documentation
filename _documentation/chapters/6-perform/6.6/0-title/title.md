@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 6
 ---
 
 ## 6.6. Record a live song

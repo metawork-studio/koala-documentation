@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 9
 ---
 
 [![Hold to record]({{ site.baseurl }}/assets/images/9/9-1/IMG_7937-1.png)]({{

@@ -1,5 +1,4 @@
 ---
-
 ---
 
 ![Overview]({{ site.baseurl }}/assets/images/placeholder.png)

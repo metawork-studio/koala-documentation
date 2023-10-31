@@ -1,5 +1,4 @@
 ---
-
 ---
 
 [![ Add markers]({{ site.baseurl }}/assets/images/4/4-5-2/IMG_79322-(50).jpg)]({{

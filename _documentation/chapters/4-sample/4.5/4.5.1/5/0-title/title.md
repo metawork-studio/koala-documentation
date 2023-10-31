@@ -1,5 +1,4 @@
 ---
-
 ---
 
 **5. Select a stretching algorithm**

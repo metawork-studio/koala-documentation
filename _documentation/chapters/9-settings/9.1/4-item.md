@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 9
 ---
 
 [![Count in*]({{ site.baseurl }}/assets/images/9/9-1/IMG_7939-1.png)]({{

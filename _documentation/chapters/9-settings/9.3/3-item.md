@@ -1,5 +1,4 @@
 ---
-order-in-chapter: 9
 ---
 
 [![Ableton link]({{ site.baseurl }}/assets/images/9/9-3/IMG_7936-1-(12).png)]({{
