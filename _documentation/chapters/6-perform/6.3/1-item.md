@@ -1,10 +1,8 @@
 ---
 ---
 
-[![One shot enabled by default]({{ site.baseurl }}/assets/images/6/6-3/IMG_7936-1-(29).png)]({{
-site.baseurl }}/assets/images/6/6-3/IMG_7936-1-(29).png)
+{% flexible_image link=".png" alt="" %}
 
-A good way to embellish your song in adding effects, let's see how.
+Image: tempo locked effects
 
-- Before adding effect, press `"PLAY"`.
-- Hold and slide the effect you want to add
+Signal path for the effects section is top left to bottom right. Tempo locked effects are divided into several horizontal sections. Each section is locked to a tempo division. STUTTER and CUTTER are tempo locked. 

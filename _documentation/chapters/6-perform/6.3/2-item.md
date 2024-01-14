@@ -1,7 +1,8 @@
 ---
 ---
 
-[![One shot enabled by default]({{ site.baseurl }}/assets/images/6/6-3/IMG_7936-1-(30).png)]({{
-site.baseurl }}/assets/images/6/6-3/IMG_7936-1-(30).png)
+{% flexible_image link=".png" alt="" %}
 
-- You can play multi fingers effects to give a unique and vibrant personality to your song.
+Image: directional effects
+
+Effects with directional modulation are divided in the middle. PITCH, FILTER and VIBROFLANGE modulate differently depending on where you slide from the middle.

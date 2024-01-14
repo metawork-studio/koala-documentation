@@ -1,0 +1,10 @@
+---
+---
+
+{% flexible_image link=".png" alt="" %}
+
+Image: resample from app
+
+Resample from app mode lets you capture sounds within Koala. Tap any free pad to start recording, then tap other samples or play back a sequence while using live effects in perform screen to capture longer passes on a single pad.
+
+Pro tip: sequences can also be bounced to a pad with the bounce option in the main menu. Read more about bounce options.

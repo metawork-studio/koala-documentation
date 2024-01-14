@@ -1,8 +1,7 @@
 ---
 ---
 
-[![Effects]({{ site.baseurl }}/assets/images/6/6-4/IMG_7936-1-(33).png)]({{
-site.baseurl }}/assets/images/6/6-4/IMG_7936-1-(33).png)
+{% flexible_image link=".png" alt="" %}
+Image: Mixer section with levels running
 
-Koalas like eucalyptus for sure, but a few people know they also love vanilla and strawberry. The thing is when they eat
-that food, they go a bit crazy. Here is the list of damages theses can cause.
+Route pads to different channels from the SAMPLE screen. Read more. The volume bar will show you which channels have pads routed to them

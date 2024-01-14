@@ -1,6 +1,0 @@
----
----
-
-{ PICS } 
-
-interface + Basic explanations

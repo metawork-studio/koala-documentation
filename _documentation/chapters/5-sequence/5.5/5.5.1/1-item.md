@@ -1,4 +1,0 @@
----
----
-
-- {PICS} UI presentation + description
