@@ -1,8 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="sample-controls-pitch.png" alt="Main sample pitch control" %}
 
-Image: delete area
+Hold PITCH and slide in any direction to change the pitch of your sample. Tap twice to reset back to the original pitch of the sample. 
 
-Tap DELETE to erase the currently selected sample. A confirmation window will open. Tap OK to confirm. 
+Pitch adjustment can be changed from fine tuning to full semitones in general settings.

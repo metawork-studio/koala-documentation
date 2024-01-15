@@ -3,6 +3,8 @@
 
 ## 6.2 Record a Song
 
+{% flexible_image link=".png" alt="" %}
+
 Image: RECORD engaged
 
 Select RECORD SONG from the MAIN MENU. Engage record mode by pressing PLAY button. Once you stop playback, recording will stop too and you will be prompted to save your song. 

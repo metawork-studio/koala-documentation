@@ -1,9 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-
-Image: time stretching activated
+{% flexible_image link="sample-sample-timestretch-applied.png" alt="Timestretch menu" %}
 
 STRETCH is available as in-app purchase SAMURAI. Read more.
 

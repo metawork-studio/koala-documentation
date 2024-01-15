@@ -10,7 +10,7 @@ order: 12
 * 24 bit export resolution
 * 64 pads for samples
 * 32 sequences
-* Length of each sequence up to 64 bars. Can be any length when two sequences are merged
+* Unlimited length for each sequence
 * Samples of virtually any length, limited only by your device’s capabilities
 * Songs of virtually any size limited by your device’s storage
 * Support for WAV, AIFF, FLUC, OGG, MP3, M4A audio formats

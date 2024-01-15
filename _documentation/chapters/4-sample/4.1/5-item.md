@@ -1,9 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-
-Image: import file
+{% flexible_image link="sample-import-audio-menu.png" alt="Import audio from files" %}
 
 Select import audio to bring up file selector when tapping on an empty pad. Selected sample will then get loaded on the same pad.
 

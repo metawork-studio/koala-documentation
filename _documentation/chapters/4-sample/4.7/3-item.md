@@ -1,10 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="sample-editor-controls.png" alt="Zoomed in selection" %}
 
-Image: zoomed in waveform
+Zoom in and out the waveform by pinching within the waveform area.
 
-Zoom in and out the waveform by pinching it.
-
-Pro tip: drag the top side of the highlighted zone to move the fixed area somewhere else within the sample
+Pro tip: Zoom out and drag while holding the top stripe of the selected area to move it around. 

@@ -1,9 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-
-Image: Delete, Copy, Snap
+{% flexible_image link="sequence-grid-note-menu.png" alt="Note menu" %}
 
 DELETE: deletes selected notes
 COPY: copies selected notes to the buffer

@@ -1,8 +1,6 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="sequence-grid-pads.png" alt="Sequence note grid screen" %}
 
-Image: grid view
-
-Double tap on any sequence to open the grid editor. Each row corresponds to pads, starting with bank A, pad 1 and going down to bank D, pad 16. 
+Double tap on any sequence to open the note grid editor. Each row corresponds to pads, starting with bank A pad 1 and going down to bank D pad 16. 

@@ -1,9 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-
-Image: sequence merge pop-up
+{% flexible_image link="sequence-mix-or-add-dialog.png" alt="Mix and merge dialog" %}
 
 Drag a recorded sequence over another sequence to bring up the pop-up. 
 

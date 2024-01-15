@@ -1,9 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-
-Image: add location selected
+{% flexible_image link="menu-samples-add-location.png" alt="Add location to samples browser" %}
 
 You can add any folder on your device to your favorites by tapping on the ADD LOCATION button. Tap EDIT button to remove folders from your favorites. Tap on the cloud button to open iCloud in Files app.
 

@@ -1,9 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-
-Image: enable, reset and bus
+{% flexible_image link="sample-editor-mix-output-dropdown.png" alt="Output dropdown" %}
 
 Tap ENABLE button to activate EQ. Great for making A/B comparisons of your changes to the EQ.
 

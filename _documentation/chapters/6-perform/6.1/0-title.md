@@ -3,6 +3,8 @@
 
 ## 6.1 Perform a Song
 
+{% flexible_image link=".png" alt="" %}
+
 Image: perform screen
 
 Start/stop the sequencer and switch between the sequences similar to the PERFORM screen.

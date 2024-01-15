@@ -1,7 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="sample-editor-tools-menu.png" alt="Tools menu" %}
 
 TOOLS: opens a dropdown menu with additional tools
 

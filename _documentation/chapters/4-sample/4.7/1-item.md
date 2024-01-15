@@ -1,8 +1,6 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="sample-editor-full-selection.png" alt="Sample Editor" %}
 
-Image: sample editor
-
-Open the sample editor by tapping the EDIT button. Main area is the waveform of your sample with controls below.
+Open the sample editor by tapping either the EDIT button. Main area is the waveform of your sample with controls below.

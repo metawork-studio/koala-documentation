@@ -1,9 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-
-Image: grid mode with scale selection
+{% flexible_image link="sequence-keygrid-scales-menu.png" alt="Scale dropdown" %}
 
 GRID mode shows notes locked to one of the available scales: 
 CHROMATIC: all 12 notes per octave are available
@@ -17,8 +15,8 @@ JAPANESE: 5 notes per octave
 PELOG: 5 notes per octave
 YING ZHONG: 5 notes per octave
 
-Use the selector at left side / bottom left side to change scales.
+Use the selector to change scales.
 
 Note: tap several areas to play chords of up to 5 voices.
 
-Pro tip: resample a chord to a pad, then use that pad in grid mode again to play chords that are always in scale.
+Pro tip: resample a chord to a pad, then use that pad in grid keyboard mode again to play chords that are always in scale.

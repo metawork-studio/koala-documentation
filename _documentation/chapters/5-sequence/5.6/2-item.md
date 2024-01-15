@@ -1,8 +1,6 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="sample-keymode-icon.png" alt="Keyboard icon on the pad" %}
 
-Image: pads with keyboard icon
-
-Note: when keyboard mode is active, pads have a keyboard icon in the SAMPLE screen. Selecting another pad automatically switches that pad to keyboard mode.
+When keyboard mode is active, the selected pad has a keyboard icon in the SAMPLE screen. Selecting another pad automatically switches that pad to keyboard mode.

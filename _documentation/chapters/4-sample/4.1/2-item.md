@@ -1,9 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-
-Image: mic effects
+{% flexible_image link="sample-mic-effects.png" alt="Mic effects" %}
 
 Use one of the 8 built-in input effects to mangle input sound during the recording. Following effects are available: 
 

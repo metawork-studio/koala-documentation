@@ -1,10 +1,6 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="sample-controls-pan.png" alt="Main sample pan control" %}
 
-Image: hold and tap pads
-
-Hold DELETE and tap pads you want to delete without confirmation.
-
-Pro tip: hold and drag any sample up into a trash area that appears when dragging samples.
+Hold PAN and slide in any direction to change the panning of your sample. Tap twice to reset back to center.

@@ -1,8 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="sample-import-audio-selected.png" alt="Import audio from file browser" %}
 
-Another way to import samples is dragging them from the sample library in Koala.
+Another way to import samples is loading them from file browser or the sample library in Koala.
 
-You can extract audio from video files by selecting **import video** in the main menu. 
+Audio from video files can be imported by selecting **import video** in the main menu. 

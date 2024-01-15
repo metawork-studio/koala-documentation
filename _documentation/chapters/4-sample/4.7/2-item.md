@@ -1,9 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-
-Image: trimmed area
+{% flexible_image link="sample-editor-selection.png" alt="Sample selection" %}
 
 Drag the left and right corners of the highlighted red area to determine the beginning and end of the playback.
 

@@ -3,9 +3,7 @@
 
 ## 5.3 Tempo Menu
 
-{% flexible_image link=".png" alt="" %}
-
-Image: tempo menu
+{% flexible_image link="sequence-bpm-menu.png" alt="BPM Tempo" %}
 
 Tap the metronome button to enable or disable metronome sound.
 

@@ -1,9 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-
-Image: EQ tab close view
+{% flexible_image link="sample-editor-eq-enabled.png" alt="Sample editor mix tab" %}
 
 To see the MIX tab, activate “Show EQ” in SETTINGS. Read more. 
 

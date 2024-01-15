@@ -1,8 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-Image: remove effect
+{% flexible_image link="mixer-effect-delete.png" alt="Delete effects" %}
 
 To remove any effect, open it, then tap on the hamburger menu and select DELETE.
 

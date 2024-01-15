@@ -1,9 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-
-Image: choke, stretch, tools
+{% flexible_image link="sample-editor-controls-3.png" alt="Chocke, Stretch and Tools" %}
 
 CHOKE: adds selected sample to one of the 6 choke groups, choking any other sample playing back in the same group. Try choke groups with open and closed hi hats.
 

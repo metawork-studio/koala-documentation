@@ -1,9 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
-
-Image: LEGATO, REVERSE, 200%, 50%, REPEAT
+{% flexible_image link="sequence-grid-note-menu-2.png" alt="Note menu continued" %}
 
 LEGATO: adds legato between all overlapping notes within the selection. Try this with bass notes.
 REVERSE: reverses the playback of the selected notes.

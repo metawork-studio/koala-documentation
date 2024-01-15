@@ -1,7 +1,7 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="perform-live-fx-hold.png" alt="Hold button" %}
 
 Image: hold button pressed
 
