@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-freeverb.png" alt="Freeverb effect" %}
+
 ### FREEVERB
 Basic reverb.
 SIZE: 0.0000–1.0

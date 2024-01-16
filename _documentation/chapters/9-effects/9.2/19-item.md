@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-ring-mod.png" alt="Ring mod effect" %}
+
 ### RING MOD
 Ring modulator.
 FREQ: 1.0 Hz to 8.00 kHz

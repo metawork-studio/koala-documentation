@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-warble.png" alt="Warble effect" %}
+
 ### WARBLE
 Emulates pitch wobble from a turntable or cassette.
 VINYL: hold to pause audio

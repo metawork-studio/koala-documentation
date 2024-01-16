@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-compressor.png" alt="Compressor" %}
+
 ### COMPRESSOR
 Compresses the loudness of a signal to make it more uniform in loudness. Can also modify transients.
 MAKEUP: on/off

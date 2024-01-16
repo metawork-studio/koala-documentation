@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-auto-pan.png" alt="Auto pan effect" %}
+
 ### AUTOPAN
 Versatile panning effect.
 

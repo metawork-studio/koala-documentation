@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-eq.png" alt="EQ effect" %}
+
 ### EQ
 3-band parametric EQ
 LOW SHELF/HI PASS: -18–18 dB

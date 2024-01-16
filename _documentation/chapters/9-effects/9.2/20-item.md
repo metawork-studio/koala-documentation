@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-sidechain.png" alt="Sidechain effect" %}
+
 ### SIDECHAIN
 Sidechain compressor. Controls the volume of CHANEL by the volume of SOURCE
 SOURCE: MIC, BUS A–D

@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-bitcooker.png" alt="Bitcooker effect" %}
+
 ### BITCOOKER
 Bit reduction and sample rate reduction with variable jitter.
 SAMPLERATE: 800 Hz to 44.1 kHz

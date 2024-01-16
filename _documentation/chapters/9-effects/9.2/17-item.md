@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-phaser.png" alt="Phaser effect" %}
+
 ### PHASER
 Phaser effect.
 RATE: 0–10 Hz

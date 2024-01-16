@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-pitch-shift.png" alt="Pitch shift effect" %}
+
 ### PITCH SHIFT
 Frequency domain pitch shifter.
 PITCH: -12 to +12 semitones

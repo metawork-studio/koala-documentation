@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-limiter.png" alt="Limiter effect" %}
+
 ### LIMITER
 Lookahead limiter for mastering.
 GAIN: -18.0–18.0 dB

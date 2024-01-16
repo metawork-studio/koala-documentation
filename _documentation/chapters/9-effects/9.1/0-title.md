@@ -3,7 +3,7 @@
 
 {% flexible_image link=".png" alt="" %}
 
-## 9.1 Live Effects
+## 9.1 Live FX
 
 ### CRUSH
 Bitcrusher effect. Slide up to decrease the sample rate of the signal.

@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-filter.png" alt="Filter effect" %}
+
 ### FILTER
 Filter featuring multiple filter types and modulation options.
 FILTER TYPE: Lo-pass, Hi-pass, Talkbox, Wah Wah

@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-bandpass.png" alt="Bandpass effect" %}
+
 ### BANDPASS
 Band pass filter.
 FREQ: 50–20.0 Hz

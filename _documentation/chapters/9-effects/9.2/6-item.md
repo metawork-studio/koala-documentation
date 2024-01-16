@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-drive.png" alt="Drive" %}
+
 ### DRIVE
 Basic waveshaping distortion.
 DRIVE: 0.000–36 dB

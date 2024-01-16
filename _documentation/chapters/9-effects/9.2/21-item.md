@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-tape-delay.png" alt="Tape delay effect" %}
+
 ### TAPE DELAY
 Delay effect simulating analog tape loops.
 DELAY: 10.0 ms to 2.50 sec

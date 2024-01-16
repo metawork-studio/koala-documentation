@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-flanger.png" alt="Flanger effect" %}
+
 ### FLANGER
 Flanger effect.
 RATE: 0.00000–20 hZ

@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-noise-gate.png" alt="Noise gate effect" %}
+
 ### NOISE GATE
 Cuts off audio going below a certain threshold.
 THRESHOLD: -60–0 dB

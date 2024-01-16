@@ -1,7 +1,8 @@
 ---
 ---
 
-{% flexible_image link=".png" alt="" %}
+{% flexible_image link="effect-delay.png" alt="Delay effect" %}
+
 ### DELAY
 Filterable, syncable delay.
 DELAY: 0.00000 ms to 2.50 sec / 1/64–8 bars
