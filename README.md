@@ -1,8 +1,56 @@
-# Koala - Documentation
+ # Koala - Documentation
 
-# Start up python environment
+# Project functions
 
-1. Initiate a fresh Python virtual environment is does not exist yet.
+### Run the project
+
+Run the project in developing mode.
+
+```shell
+bundle exec jekyll serve
+```
+
+### Build the project
+
+Build the project.
+
+```shell
+bundle exec jekyll build
+```
+
+### Mine images from PSD files
+The application parses images from `canvases/mobile.psd` and `canvases/tablet.psd` files. 
+
+`canvases/mobile.example.psd` and `canvases/tablet.example.psd` files are used as examples. Create your own PSDs based on them. If you get any unexpected results just compare your and example PSDs.
+
+The script generates `images/mobile-file-list.txt` and `images/tablet-file-list.txt` files with lists of paths to generated files.
+
+For instance,
+
+```
+----------------------
+images/2/tablet/IMG_8151|serform
+images/2/tablet/IMG_8150|sequence
+images/2/tablet/IMG_8148|sample
+----------------------
+images/3/tablet/IMG_8153|copy
+```
+
+**Mine your PSD!**
+
+Images add into the `images/` folder.
+
+```shell
+python mine-psd.py
+```
+
+# Set up working environment
+
+Prepare your working space to start working on.
+
+## Python
+
+1. Initiate a fresh Python virtual environment if it does not exist yet.
 
 ```shell
 python -m venv venv
@@ -26,34 +74,25 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. The application uses a file with the `canvases/mobile.psd` and `canvases/tablet.psd` names. Add your own file or rename the exemplary `canvases/{FORMAT}.example.psd` file for a quick demo. You will see a variety of directory structures.
+## Ruby
 
-5. **Mine your PSD!**
-
-```shell
-python mine-psd.py
-```
-
-##### Dump requirements
-
-```shell
-pip freeze > requirements.txt
-```
-
-# Ruby installation
-
-Ruby installation recommendations.
-
-1. Install _ruby_ using _rvm_. _rvm_ installation [instruction](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rvm-on-ubuntu-20-04).
-2. Install a ruby version that is used in the project; `.ruby-version` file.
+1. Select a project's ruby version which is in the `.ruby-version` file.
 ```shell
 rvm use
 ```
-3. Install dependencies.
+2. Install dependencies.
 ```shell
 bundle install
 ```
 
+### Install Ruby
+
+If you need to install Ruby and encounter different troubles along the way then you should look at the recommendations below.
+
+--- 
+###### [Install](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rvm-on-ubuntu-20-04) _ruby_ using _rvm_.
+
+---
 
 ##### Solutions to potentials problems
 
@@ -97,21 +136,3 @@ RVM is not a function, selecting rubies with 'rvm use ...' will not work
 ```
 
 [Run shell in a login shell mode](https://stackoverflow.com/questions/23963018/rvm-is-not-a-function-selecting-rubies-with-rvm-use-will-not-work)
-
-
-# Run the project
-
-Run the project in developing mode.
-
-```shell
-bundle exec jekyll serve
-```
-
-# Build the project
-
-Build the project.
-
-```shell
-bundle exec jekyll build
-```
-

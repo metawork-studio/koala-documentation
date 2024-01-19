@@ -31,8 +31,8 @@ Jekyll::Hooks.register :site, :post_write do |site|
   root_directory = site.source
   mobile_dir = File.join(root_directory, '_mobile')
   tablet_dir = File.join(root_directory, '_tablet')
-  mobile_template_parts_dir = File.join(site.dest, 'mobile', 'template-parts')
-  tablet_template_parts_dir = File.join(site.dest, 'tablet', 'template-parts')
+  mobile_template_parts_dir = File.join(site.dest, 'mobile', 'chapters')
+  tablet_template_parts_dir = File.join(site.dest, 'tablet', 'chapters')
 
   FileUtils.rm_rf(mobile_dir) if Dir.exist?(mobile_dir)
   FileUtils.rm_rf(tablet_dir) if Dir.exist?(tablet_dir)
