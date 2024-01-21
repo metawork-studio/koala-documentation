@@ -1,7 +1,7 @@
 ---
 ---
 
-## 2.2 Sequence Screen
+## 2.2. Sequence Screen
 {% flexible_image link="sequence-idle.png" alt= "Sequence screen" %}
 
 SEQUENCE screen is used to create and play back sequences. sequences can be merged together, played live or resampled on a pad.
