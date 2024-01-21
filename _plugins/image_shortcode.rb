@@ -21,16 +21,17 @@ module Jekyll
       filename = @params['link'] || ''
       alt_text = @params['alt'] || ''
       css_classes = @params['class'] || ''
+      css_id = @params['id'] || ''
 
       if context['page']['url'].include?('tablet') && !filename.empty?
        tablet_path = "tablet/#{filename}"
         image_tag = "<a href=\"#{image_folder}#{tablet_path}\" data-fancybox=\"gallery\" class=\"fancybox\">"
-        image_tag += "<img src=\"#{image_folder}#{tablet_path}\" alt=\"#{alt_text}\" class=\"#{css_classes}\" />"
+        image_tag += "<img src=\"#{image_folder}#{tablet_path}\" alt=\"#{alt_text}\" class=\"#{css_classes}\" id=\"#{css_id}\"/>"
         image_tag += "</a>"
       else
         css_classes = "img-phone"
         image_tag = "<a href=\"#{image_folder}#{filename}\" data-fancybox=\"gallery\" class=\"fancybox\">"
-        image_tag += "<img src=\"#{image_folder}#{filename}\" alt=\"#{alt_text}\" class=\"#{css_classes}\" />"
+        image_tag += "<img src=\"#{image_folder}#{filename}\" alt=\"#{alt_text}\" class=\"#{css_classes}\" id=\"#{css_id}\"/>"
         image_tag += "</a>"
       end
 
