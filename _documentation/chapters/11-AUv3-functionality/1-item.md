@@ -1,7 +1,7 @@
 ---
 ---
 
-## 11.1 AUv3 Instrument (no input captured)
+## 11.1. AUv3 Instrument (no input captured)
 
 {% flexible_image link="auv3-instrument.png" alt="AUv3 instrument mode" %}
 

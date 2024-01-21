@@ -1,7 +1,7 @@
 ---
 ---
 
-## 11.3 Multi-Bus AUv3 Mode
+## 11.3. Multi-Bus AUv3 Mode
 
 {% flexible_image link="auv3-multibus.png" alt="AUv3 Multi-bus mode" %}
 

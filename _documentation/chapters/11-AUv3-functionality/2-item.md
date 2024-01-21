@@ -1,7 +1,7 @@
 ---
 ---
 
-## 11.2 AUv3 Effect (input captured)
+## 11.2. AUv3 Effect (input captured)
 
 {% flexible_image link="auv3-effect.png" alt="AUv3 effect mode" %}
 
