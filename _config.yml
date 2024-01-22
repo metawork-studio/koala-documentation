@@ -9,7 +9,10 @@ title: KOALA SAMPLER MANUAL
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  Koala is a versatile sampler, sequencer and mixer. Perform your songs with 16 live FX. Create your signature sound with 24 channel effects. STEM SPLIT and TIMESTRETCH among other powerful features. Available for iOS and Android devices, as well as Mac and Windows.
+  Koala is a versatile sampler, sequencer and mixer. 
+  Perform your songs with 16 live FX. Create your signature sound with 24 channel effects. 
+  STEM SPLIT and TIMESTRETCH among other powerful features. 
+  Available for iOS and Android devices, as well as Mac and Windows.
 
 # Build settings
 
