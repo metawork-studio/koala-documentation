@@ -1,7 +1,10 @@
 title: KOALA SAMPLER MANUAL
   author: Nikolai Sokolov
-  name: https://metawork.studio
-  email: nikolai@metawork.studio
+  design: Alex Oleksandrov
+  coding: Stas Pyshevski
+  url: https://metawork.studio
+  email: hello@metawork.studio
+
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
