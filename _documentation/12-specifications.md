@@ -12,7 +12,7 @@ order: 12
 * 32 sequences
 * Unlimited length for each sequence
 * Samples of virtually any length, limited only by your device’s capabilities
-* Songs of virtually any size limited by your device’s storage
-* Support for WAV, AIFF, FLUC, OGG, MP3, M4A audio formats
-* Support for mpeg and M4V video formats
+* Songs of virtually any size limited only by your device’s storage
+* Any audio file your device can play back with the default media player is supported.
+* Any video your device can play back with the default media player can be processed into audio.
 * Runs on iOS, Android, Windows, MAC and Linux platforms
