@@ -32,12 +32,16 @@
     //region get chapters submenu
     $('.documentation-item').each(function () {
       const pageUrl = $(this).data('page-url');
+      const pageUrlWithoutSlash = pageUrl.replace(/^\//, '');
+      const pageUrlFormat = pageUrlWithoutSlash.replace(/[./-]/g, '_');
+
+
       const currentItem = this;
       const loaderElement = $('<div class="loader">Loading...</div>').appendTo(this);
 
       function updateContent(newContent) {
-        localStorage.setItem(pageUrl + '_content', newContent);
-        $(currentItem).empty().append(newContent);
+        localStorage.setItem(pageUrlFormat + '_content', newContent);
+        $(currentItem).append(newContent);
       }
 
       function fetchContent() {
@@ -59,7 +63,7 @@
                 titles.map(item => `<li><a href="${pageUrl}#${item.id}">${item.content}</a></li>`).join('') +
                 '</ul>';
 
-              const storedContent = localStorage.getItem(pageUrl + '_content');
+              const storedContent = localStorage.getItem(pageUrlFormat + '_content');
 
               if (listHtml !== storedContent) {
                 updateContent(listHtml);
@@ -73,7 +77,7 @@
         });
       }
 
-      const storedContent = localStorage.getItem(pageUrl + '_content');
+      const storedContent = localStorage.getItem(pageUrlFormat + '_content');
 
       if (storedContent) {
         $(this).append(storedContent);
