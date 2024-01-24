@@ -5,9 +5,24 @@ layout: base
 <div class="home">
 
   {% assign chapters = site[page.collection] | sort: 'order' %}
+  {% assign counter = 0 %}
+
+  {{half_count}}
+
+  {% assign total_iterations = 0 %}
+
+  {% for chapter in chapters %}
+  {% unless chapter.url contains 'chapters' %}
+  {% unless chapter.hidden == true %}
+  {% assign total_iterations = total_iterations | plus: 1 %}
+  {% endunless %}
+  {% endunless %}
+  {% endfor %}
+
+  {% assign half_count = total_iterations | divided_by: 2 | floor %}
 
   <div class="documentation-items-wrapper">
-    <div id="documentation-items" class="documentation-items">
+    <div id="documentation-items" class="documentation-items row">
 
       {% for chapter in chapters %}
 
@@ -15,11 +30,27 @@ layout: base
 
       {% unless chapter.hidden == true %}
 
-      <div class="documentation-item">
-        <a href="{{ chapter.url | relative_url }}">
-          {{chapter.order}}. {{ chapter.title }}
-        </a>
+      {% assign counter = counter | plus: 1 %}
+
+      {% if counter == 1 %}
+      <div class="col-md-6">
+        {% endif %}
+
+        <div class="documentation-item" data-page-url="{{ chapter.url | relative_url }}">
+          <a href="{{ chapter.url | relative_url }}">
+            {{chapter.order}}. {{ chapter.title }}
+          </a>
+        </div>
+
+        {% if counter == half_count %}
       </div>
+      <div class="col-md-6">
+        {% endif %}
+
+        {% if counter.last %}
+      </div>
+      {% endif %}
+
 
       {% endunless %}
 
