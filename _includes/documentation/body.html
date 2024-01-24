@@ -47,7 +47,7 @@
 
   {% if current_chapter_group != documentation_url[1] %}
 
-  <div class="w-100 123321"></div>
+  <div class="w-100"></div>
 
   {% endif %}
 
@@ -63,6 +63,7 @@
     {% endcapture %}
 
     {{ render_chapters | split: "---" | last | markdownify }}
+
   </div>
 
   {% assign current_chapter_group = documentation_url[1] %}

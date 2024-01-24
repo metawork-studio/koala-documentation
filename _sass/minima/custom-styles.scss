@@ -90,12 +90,7 @@ blockquote {
   &-items {
     font-size: 32px;
     font-weight: 300;
-
-    &-wrapper {
-      @media screen and (min-width: 768px) {
-        column-count: 2;
-      }
-    }
+    scroll-margin-top: 60px;
   }
 
   &-item {
@@ -172,6 +167,19 @@ blockquote {
   display: block;
 }
 
+.documentation-item {
+  &-nav {
+    font-size: 20px;
+    margin-top: 12px;
+
+    a {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      display: inline-block;
+    }
+  }
+}
+
 @media (hover: hover) {
   .home-documentation-item a:hover img {
     transform: scale(1.05);
@@ -186,6 +194,7 @@ blockquote {
 
 .home-documentation-item-image img {
   transition: .5s;
+  object-fit: contain;
 }
 
 .home-documentation-item-image {
@@ -193,4 +202,45 @@ blockquote {
   background-color: #00000033;
   overflow: hidden;
   text-align: center;
+}
+
+.documentation-content {
+  h2 {
+    scroll-margin-top: 60px;
+  }
+}
+
+.loader {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.to-top {
+  z-index: 10;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 10px;
+  border-top: solid 1px #FFFFFF33;
+  background-color: #00000055;
+  height: 52px;
+  width: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: background-color .5s, opacity .7s, visibility .7s;
+  opacity: 0;
+  cursor: pointer;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media (hover:hover) {
+    &:hover {
+      background-color: #000000d6;
+    }
+  }
 }
