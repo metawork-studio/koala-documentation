@@ -13,7 +13,6 @@
     src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KDTwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIFRyYW5zZm9ybWVkIGJ5OiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9Ii0xODkuNDQgLTE4OS40NCA4OTAuODggODkwLjg4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2ZmZmZmZiI+Cg08ZyBpZD0iU1ZHUmVwb19iZ0NhcnJpZXIiIHN0cm9rZS13aWR0aD0iMCIvPgoNPGcgaWQ9IlNWR1JlcG9fdHJhY2VyQ2FycmllciIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cg08ZyBpZD0iU1ZHUmVwb19pY29uQ2FycmllciI+IDxwb2x5Z29uIGZpbGw9InZhcigtLWNpLXByaW1hcnktY29sb3IsICNmZmZmZmYpIiBwb2ludHM9IjM5MC42MjQgMTUwLjYyNSAyNTYgMTYgMTIxLjM3NiAxNTAuNjI1IDE0NC4wMDQgMTczLjI1MiAyNDAuMDAxIDc3LjI1NCAyNDAuMDAxIDQ5NS4yMzYgMjcyLjAwMSA0OTUuMjM2IDI3Mi4wMDEgNzcuMjU3IDM2Ny45OTYgMTczLjI1MiAzOTAuNjI0IDE1MC42MjUiIGNsYXNzPSJjaS1wcmltYXJ5Ii8+IDwvZz4KDTwvc3ZnPg=="/>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
   $(document).ready(function () {
 
@@ -35,68 +34,5 @@
 
     //endregion
 
-    //region get chapters submenu
-    $('.documentation-item').each(function () {
-      const pageUrl = $(this).data('page-url');
-      const pageUrlWithoutSlash = pageUrl.replace(/^\//, '');
-      const pageUrlFormat = pageUrlWithoutSlash.replace(/[./-]/g, '_');
-
-
-      const currentItem = this;
-      const loaderElement = $('<div class="loader">Loading...</div>').appendTo(this);
-
-      function updateContent(newContent) {
-        localStorage.setItem(pageUrlFormat + '_content', newContent);
-        $(currentItem).append(newContent);
-      }
-
-      function fetchContent() {
-        $.ajax({
-          url: pageUrl,
-          method: 'GET',
-          success: function (data) {
-            loaderElement.remove();
-
-            const h2Items = $(data).find('h2');
-            if (h2Items.length > 0) {
-              const titles = h2Items.map(function () {
-                const id = $(this).attr('id');
-                const content = $(this).text();
-                return {id: id, content: content};
-              }).get();
-
-              const listHtml = '<ul class="documentation-item-nav">' +
-                titles.map(item => `<li><a href="${pageUrl}#${item.id}">${item.content}</a></li>`).join('') +
-                '</ul>';
-
-              const storedContent = localStorage.getItem(pageUrlFormat + '_content');
-
-              if (listHtml !== storedContent) {
-                updateContent(listHtml);
-              }
-            }
-          },
-          error: function () {
-            loaderElement.remove();
-            console.error(`Failed to fetch content for ${pageUrl}`);
-          }
-        });
-      }
-
-      const storedContent = localStorage.getItem(pageUrlFormat + '_content');
-
-      if (storedContent) {
-        $(this).append(storedContent);
-        loaderElement.remove();
-        fetchContent(); // Fetch in the background to check for updates
-      } else {
-        fetchContent();
-      }
-    });
-
-//endregion
-
   });
-
-
 </script>
