@@ -58,6 +58,10 @@ pre > code {
   max-width: 40% !important;
 }
 
+.smaller {
+  font-size: 0.6em;
+}
+
 blockquote {
   border-color: $primary-color;
   color: $body-color;
@@ -120,7 +124,6 @@ blockquote {
       }
 
       a {
-        font-size: 0.75em;
         text-align: right;
         @media screen and (max-width: 991px) {
           margin-bottom: 0.25em;
@@ -146,7 +149,7 @@ blockquote {
 
 //
 .documentation-single-article-header-switcher-item {
-  font-size: 0;
+  font-size: 0.6em;
 }
 
 .documentation-single-article-header-switcher-item-active {
