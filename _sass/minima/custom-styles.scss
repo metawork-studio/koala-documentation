@@ -12,6 +12,10 @@ body {
 //   }
 // }
 /* overriding minima begin */
+body {
+    font-size: 18px;
+    line-height: 1.7em;
+}
 .site-header {
     border-top: 0;
     border-bottom: 1px #ffffff33 solid;
@@ -30,6 +34,20 @@ body {
 
 
 /* overriding minima end */
+
+ul {
+    list-style: none;;
+}
+ul li::before {
+    content: "\2022";
+    color: #FE2E5A;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    }
+
+
 .site-header .container {
     display: flex;
     justify-content: space-between;
@@ -106,14 +124,9 @@ blockquote {
   color: $body-color;
   padding: 10px;
   margin: 20px 0;
-  font-size: 28px;
 }
 
-@media screen and (min-width: 768px) {
-  blockquote {
-    font-size: 20px;
-  }
-}
+
 
 .img-fluid,
 .documentation-content img {
@@ -131,7 +144,6 @@ blockquote {
 
 .documentation {
   &-items {
-    font-size: 32px;
     font-weight: 300;
     scroll-margin-top: 60px;
   }
@@ -146,9 +158,6 @@ blockquote {
     margin: 140px 0 80px;
     text-align: center;
 
-    a {
-      font-size: 26px;
-    }
   }
 
   &-single-article {
@@ -163,7 +172,6 @@ blockquote {
       }
 
       a {
-        font-size: 26px;
         text-align: right;
         @media screen and (max-width: 991px) {
           margin-bottom: 10px;
@@ -200,7 +208,6 @@ blockquote {
 
 .documentation-item {
   &-nav {
-    font-size: 20px;
     margin-top: 12px;
 
     a {
