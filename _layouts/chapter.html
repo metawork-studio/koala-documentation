@@ -7,27 +7,15 @@ layout: base
     <div>
       <h1 class="post-title">{{ page.order }}. {{ page.title | escape }}</h1>
     </div>
-    <div class="documentation-single-article-header-menu">
-
-      {%- include documentation/mobile-tablet-switcher.html -%}
-
+    <div>
       <a href="{{ page.collection | relative_url }}#documentation-items">
-        <u>
-          Return to menu
-        </u>
+        &laquo; Contents
       </a>
     </div>
   </div>
   <div class="documentation-content post-content">
-
-    {{ page.description }}
-
-    {{ content }}
-
-    {%- include documentation/body.html -%}
-
+    {{ page.description }} {{ content }} {%- include documentation/body.html -%}
   </div>
 </article>
-
 
 {%- include documentation/pagination.html -%}

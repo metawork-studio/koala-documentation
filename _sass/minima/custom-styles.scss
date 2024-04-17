@@ -3,17 +3,60 @@
 body {
   background-image: var(--background_image);
   color: $body-color;
-  background-color: #283838;
+  background-color: #212121;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 30px;
-  }
+// @media screen and (min-width: 768px) {
+//   body {
+//     font-size: 30px;
+//   }
+// }
+/* overriding minima begin */
+.site-header {
+    border-top: 0;
+    border-bottom: 1px #ffffff33 solid;
+}
+@include media-query($on-palm) {
+    .site-title {
+        padding-right: 0;
+    }
+}
+.post-content h1 {
+    font-size: 1rem;
+}
+.post-content h2 {
+    font-size: 1.5rem;
+}
+
+
+/* overriding minima end */
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@include media-query($on-palm) {
+    .site-header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+h1, h2, h3, h4, a.site-title {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  color: $primary-color;
 }
 
 a {
-  color: #d0d0d0;
+  color: $link-color;
+}
+a:hover {
+    color: $primary-color;
 }
 
 strong, b {
@@ -40,15 +83,15 @@ pre > code {
   }
 }
 
-.img-border,
-.img-placeholder,
-.documentation-content img {
-  box-sizing: border-box;
+// .img-border,
+// .img-placeholder,
+// .documentation-content img {
+//   box-sizing: border-box;
 
-  @media screen and (max-width: 1199px) {
-    padding: 10px;
-  }
-}
+//   @media screen and (max-width: 1199px) {
+//     padding: 10px;
+//   }
+// }
 
 .img-placeholder {
   border-color: transparent !important;
@@ -138,22 +181,10 @@ blockquote {
   margin-bottom: 40px;
 }
 
-.documentation-single-article-header-switcher {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
 
-//
-.documentation-single-article-header-switcher-item {
-  font-size: 0;
-}
-
-.documentation-single-article-header-switcher-item-active {
-
-  background-color: #fff;
-  border-radius: 150%;
-  padding: 8px;
+.documentation-single-article-header-switcher a:hover, .documentation-single-article-header-switcher .other-option {
+    text-decoration: underline;
+    color: $primary-color;
 }
 
 .documentation-single-article-header-menu {
