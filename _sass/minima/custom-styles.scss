@@ -49,6 +49,9 @@ body {
     overflow-x: auto;
     overflow-y: auto;
 }
+.page-content {
+    padding: 1em 0;
+}
 /* overriding minima end */
 
 .site-footer {
@@ -73,7 +76,7 @@ body {
     transform: rotate(360deg);
 }
 
-ul {
+ul.documentation-item-nav {
     list-style: none;
 }
 ul.documentation-item-nav li::before {
