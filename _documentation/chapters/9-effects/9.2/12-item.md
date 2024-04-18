@@ -1,4 +1,5 @@
 ---
+title: Limiter
 ---
 
 {% flexible_image link="effect-limiter.png" alt="Limiter effect" %}

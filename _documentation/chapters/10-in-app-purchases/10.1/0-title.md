@@ -1,4 +1,5 @@
 ---
+title: Samurai
 ---
 
 ## 10.1. SAMURAI

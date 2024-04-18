@@ -1,5 +1,6 @@
 ---
+title: Tempo Delay
 ---
 
-### TEMPODELAY
+### TEMPO DELAY
 Stereo delay effect. Slide up for a longer delay.

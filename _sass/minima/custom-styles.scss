@@ -75,6 +75,16 @@ body {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
+p {
+    margin-bottom: 1em;
+}
+.appStoreLinks {
+text-align: center;
+margin-bottom: 1em;
+}
+.appStoreLinks img {
+    width: 8em;
+}
 
 ul.documentation-item-nav {
     list-style: none;

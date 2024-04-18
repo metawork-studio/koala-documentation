@@ -42,7 +42,7 @@
     {% if prev_chapter_url %}
     <a class="prev" href="{{ prev_chapter_url | relative_url}}">
       <u>
-        Previous chapter
+        &laquo; Previous
       </u>
       <div style="font-size: 16px;">
         {{prev_chapter_order}}. {{ prev_chapter_title }}
@@ -52,14 +52,14 @@
   </div>
   <div>
     <a href="{{ page.collection | relative_url }}#documentation-items">
-        &laquo; Contents
+        Contents
     </a>
   </div>
   <div style="text-align: right;">
     {% if next_chapter_url %}
     <a class="next" href="{{ next_chapter_url | relative_url}}">
       <u>
-        Next chapter
+        Next &raquo;
       </u>
       <div style="font-size: 16px;">
         {{next_chapter_order}}. {{ next_chapter_title }}

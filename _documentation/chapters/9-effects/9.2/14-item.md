@@ -1,4 +1,5 @@
 ---
+title: Meter
 ---
 
 {% flexible_image link="effect-meter.png" alt="Meter effect" %}

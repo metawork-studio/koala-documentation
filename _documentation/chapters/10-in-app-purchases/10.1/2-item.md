@@ -1,4 +1,5 @@
 ---
+title: Piano Roll
 ---
 
 {% flexible_image link="sequence-grid-piano-roll.png" alt="Piano roll" %}

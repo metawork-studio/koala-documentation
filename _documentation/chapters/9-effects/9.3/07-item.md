@@ -1,4 +1,5 @@
 ---
+title: Kaleidodelic
 ---
 
 {% flexible_image link="background-fx-kaleidodelic.png" alt="Background FX Kaleidodelic" %}

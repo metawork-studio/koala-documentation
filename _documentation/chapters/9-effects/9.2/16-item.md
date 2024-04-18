@@ -1,4 +1,5 @@
 ---
+title: Noise Gate
 ---
 
 {% flexible_image link="effect-noise-gate.png" alt="Noise gate effect" %}

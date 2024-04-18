@@ -1,4 +1,5 @@
 ---
+title: Background Effects
 ---
 
 ### 9.3. Background Effects

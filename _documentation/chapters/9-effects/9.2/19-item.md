@@ -1,4 +1,5 @@
 ---
+title: Ring Mod
 ---
 
 {% flexible_image link="effect-ring-mod.png" alt="Ring mod effect" %}

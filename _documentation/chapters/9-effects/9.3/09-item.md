@@ -1,4 +1,5 @@
 ---
+title: Huey
 ---
 
 {% flexible_image link="background-fx-huey.png" alt="Background FX Huey" %}

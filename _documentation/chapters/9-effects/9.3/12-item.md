@@ -1,4 +1,5 @@
 ---
+title: None
 ---
 
 {% flexible_image link="background-fx-none.png" alt="Background FX None" %}

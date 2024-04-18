@@ -1,4 +1,5 @@
 ---
+title: Flanger
 ---
 
 {% flexible_image link="effect-flanger.png" alt="Flanger effect" %}

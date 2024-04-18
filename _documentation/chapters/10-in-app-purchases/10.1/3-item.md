@@ -1,4 +1,5 @@
 ---
+title: Autochop
 ---
 
 {% flexible_image link="sample-autochop-equal.png" alt="Autochop" %}

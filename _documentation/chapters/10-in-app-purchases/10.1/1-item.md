@@ -1,4 +1,5 @@
 ---
+title: Timestretch
 ---
 
 {% flexible_image link="sample-timestretch-menu.png" alt="Timestretch" %}
