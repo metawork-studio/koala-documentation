@@ -32,15 +32,53 @@ body {
     font-size: 1.5rem;
 }
 
+.social-media-list li {
+    margin: 1em;
+}
+.social-media-list li a {
+    border: 0;
+    padding: 0;
+}
 
+.social-media-list li a:hover svg.grey {
+    color: $primary-color;
+}
+.social-media-list li a svg {
+    width: 2em;
+    height: 2em;
+    overflow-x: auto;
+    overflow-y: auto;
+}
 /* overriding minima end */
 
-ul {
-    list-style: none;;
+.site-footer {
+    text-align: center;
 }
-ul li::before {
+.elf-link {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.elf-link img {
+    width: 3em;
+}
+
+.hoverSpin {
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+}
+
+.hoverSpin:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+ul {
+    list-style: none;
+}
+ul.documentation-item-nav li::before {
     content: "\2022";
-    color: #FE2E5A;
+    color: white;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -67,11 +105,22 @@ h1, h2, h3, h4, a.site-title {
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
-  color: $primary-color;
+  
+}
+h1, h2, h3 {
+    color: white;
+}
+.site-title {
+    color: $primary-color;
 }
 
 a {
-  color: $link-color;
+  color: $primary-color;
+}
+.root-section {
+    font-size: 1.5em;
+    display: block;
+    // border-bottom: 1px white solid;
 }
 a:hover {
     color: $primary-color;
@@ -192,13 +241,13 @@ blockquote {
 
 .documentation-single-article-header-switcher a:hover, .documentation-single-article-header-switcher .other-option {
     text-decoration: underline;
-    color: $primary-color;
+    color: white;
 }
 
 .documentation-single-article-header-menu {
   margin-bottom: 20px;
   @media screen and (min-width: 992px) {
-    text-align: right;
+    // text-align: right;
   }
 }
 

@@ -6,7 +6,6 @@ author:
   url: https://metawork.studio
   email: hello@metawork.studio
 
-
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
@@ -29,15 +28,15 @@ minima:
 # date_format: "%b %-d, %Y"
 
 # Generate social links in footer.
-#
-# social_links:
-#   - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
-#   - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
-#   - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
-#   - { platform: telegram,       user_url: "https://t.me/jekyll" }
-#   - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
-
+  social_links:
+    - { platform: instagram,      user_url: "https://www.instagram.com/koalasampler" }
+    - { platform: twitter,        user_url: "https://twitter.com/koalasampler" }
+    - { platform: youtube,        user_url: "https://www.youtube.com/c/elfaudio" }
+    - { platform: facebook,       user_url: "https://www.facebook.com/groups/koalasampler" }
+    - { platform: reddit,         user_url: "https://www.reddit.com/r/koalasampler" }
+    - { platform: discord,        user_url: "https://discord.gg/7vz3rH5" }
+    - { platform: twitch,         user_url: "https://www.twitch.tv/koalabeatcast" }
 collections:
   documentation:
     output: false
@@ -51,4 +50,3 @@ collections:
 #    permalink: /:collection/:path/
 
 permalinks: pretty
-baseurl: "/manual"

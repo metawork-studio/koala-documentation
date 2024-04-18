@@ -37,8 +37,8 @@
       {% endif %}
 
       <div class="documentation-item" data-page-url="{{ chapter.url | relative_url }}">
-        <a href="{{ chapter.url | relative_url }}">
-          {{chapter.order}}. {{ chapter.title }}
+        <a class="root-section" href="{{ chapter.url | relative_url }}">
+            {{chapter.order}}. {{ chapter.title }}
         </a>
       </div>
 
