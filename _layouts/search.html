@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+<h1>results</h1>
+<script src="/assets/js/lunr.js"></script>
+<script src="/assets/js/search.js"></script>
+
+<!-- 
+
+<form onSubmit="return search(document.getElementById('search').value);">
+   <input type="text" id="search" name="q" maxlength="255" value="" placeholder="Search" />
+</form> -->
+<div id="searchresults">
+    <ul></ul>
+</div>
+
+<script>
+    const url = window.location.href
+    const urlParams = new URLSearchParams(new URL(url).search)
+    const q = urlParams.get('q')
+    // Set the text field value if qValue is not null
+    if (q !== null) {
+        const searchInput = document.getElementById('search').value = q;
+    }
+    search(q);
+</script>
