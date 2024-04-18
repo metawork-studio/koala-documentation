@@ -51,3 +51,4 @@ collections:
 #    permalink: /:collection/:path/
 
 permalinks: pretty
+baseurl: "/manual"
