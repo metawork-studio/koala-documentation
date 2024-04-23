@@ -1,7 +1,3 @@
----
-title: Compressor
----
-
 {% flexible_image link="effect-compressor.png" alt="Compressor" %}
 
 ### COMPRESSOR

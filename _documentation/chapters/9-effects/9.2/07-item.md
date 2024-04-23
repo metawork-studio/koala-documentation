@@ -1,7 +1,3 @@
----
-title: EQ
----
-
 {% flexible_image link="effect-eq.png" alt="EQ effect" %}
 
 ### EQ

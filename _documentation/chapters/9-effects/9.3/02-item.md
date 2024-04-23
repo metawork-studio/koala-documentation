@@ -1,7 +1,3 @@
----
-title: Rings
----
-
 {% flexible_image link="background-fx-rings.png" alt="Background FX Rings" %}
 
 ### RINGS

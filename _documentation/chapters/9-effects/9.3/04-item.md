@@ -1,7 +1,3 @@
----
-title: Zoom
----
-
 {% flexible_image link="background-fx-zoom.png" alt="Background FX Zoom" %}
 
 ### ZOOM

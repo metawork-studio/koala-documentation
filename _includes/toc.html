@@ -40,6 +40,15 @@
         <a class="root-section" href="{{ chapter.url | relative_url }}">
             {{chapter.order}}. {{ chapter.title }}
         </a>
+
+
+
+
+
+
+
+
+
       </div>
 
       {% if counter == half_count %}
@@ -115,13 +124,13 @@
   
         const storedContent = localStorage.getItem(pageUrlFormat + '_content');
   
-        if (storedContent) {
-          $(this).append(storedContent);
-          loaderElement.remove();
-          fetchContent(); // Fetch in the background to check for updates
-        } else {
-          fetchContent();
-        }
+        // if (storedContent) {
+        //   $(this).append(storedContent);
+        //   loaderElement.remove();
+        //   fetchContent(); // Fetch in the background to check for updates
+        // } else {
+        //   fetchContent();
+        // }
       });
   
   //endregion

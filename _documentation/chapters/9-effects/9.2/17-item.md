@@ -1,7 +1,3 @@
----
-title: Phaser
----
-
 {% flexible_image link="effect-phaser.png" alt="Phaser effect" %}
 
 ### PHASER

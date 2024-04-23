@@ -1,7 +1,3 @@
----
-title: Blinds
----
-
 {% flexible_image link="background-fx-blinds.png" alt="Background FX blinds" %}
 
 ### BLINDS

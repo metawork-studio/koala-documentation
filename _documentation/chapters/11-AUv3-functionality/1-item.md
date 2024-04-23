@@ -1,4 +1,5 @@
 ---
+title: 11.1. AUv3 Instrument (no input captured)
 ---
 
 ## 11.1. AUv3 Instrument (no input captured)

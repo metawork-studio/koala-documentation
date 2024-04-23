@@ -1,7 +1,3 @@
----
-title: Band Pass Filter
----
-
 {% flexible_image link="effect-bandpass.png" alt="Bandpass effect" %}
 
 ### BANDPASS

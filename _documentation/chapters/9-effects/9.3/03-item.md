@@ -1,7 +1,3 @@
----
-title: Zoom Warp
----
-
 {% flexible_image link="background-fx-zoom-warp.png" alt="Background FX Zoom Warp" %}
 
 ### ZOOM WARP

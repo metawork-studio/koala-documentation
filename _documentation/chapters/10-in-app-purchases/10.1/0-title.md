@@ -1,7 +1,7 @@
 ---
-title: Samurai
+title: 10.1. Samurai
 ---
 
-## 10.1. SAMURAI
+## {{ page.title }}
 
 Samurai In-App purchase enables advanced features of Koala.

@@ -1,7 +1,3 @@
----
-title: TV
----
-
 {% flexible_image link="background-fx-tv.png" alt="Background FX TV" %}
 
 ### TV

@@ -15,3 +15,5 @@ rm _site/screenshot.png
 
 rm _site/readme_banner.svg
 rm -Rf _site/script
+
+node generate-pdf.js

@@ -1,7 +1,8 @@
 ---
+title: 2.3. Perform Screen
 ---
 
-## 2.3. Perform Screen
+## {{ page.title }}
 {% flexible_image link="perform-live-fx-rec-armed.png" alt="Perform screen" %}
 
 PERFORM screen is used to perform and record your song.

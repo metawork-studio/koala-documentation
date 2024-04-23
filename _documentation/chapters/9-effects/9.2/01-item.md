@@ -1,7 +1,3 @@
----
-title: Autopan
----
-
 {% flexible_image link="effect-auto-pan.png" alt="Auto pan effect" %}
 
 ### AUTOPAN

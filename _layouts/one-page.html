@@ -7,15 +7,22 @@
 
 <main class="page-content" aria-label="Content">
 	<div class="container">
-		<h1>KOALA SAMPLER MANUAL</h1>
 
-		<div class="updateDate">Last updated: {{ site.time | date: '%A, %B %d, %Y' }}</div>
-		<!-- loop through root chapters -->
-		{% for chapter in site.documentation %}
-			{% unless chapter.hidden == true or chapter.url contains 'chapters' %}
+		<div class="front-page">
+			<h1>KOALA SAMPLER MANUAL</h1>
+			<div class="updateDate">Last updated: {{ site.time | date: '%A, %B %d, %Y' }}</div>
+		</div>
 
-				<!-- for each root chapter, work out the identifying path component
-						e/g. '2-general-overview' -->
+		<div class="toc">
+			<h2>Contents</h2>
+			<!-- loop through root chapters -->
+
+			{% assign docs = site.documentation | sort: 'order' %}
+			{% for chapter in docs %}
+				{% unless chapter.hidden == true or chapter.url contains 'chapters'  %}
+
+					<!-- for each root chapter, work out the identifying path component
+							e/g. '2-general-overview' -->
 					{% assign chapter_path_component = chapter.url | split: '/' | slice: 2, 1 | first | split: '.'| first %}
 
 
@@ -29,11 +36,11 @@
 							<!-- now search for that path component in any path that also has 'chapters'
 							and we've found the subchapters -->
 						{% for subchapter in site.documentation %}
-							{% unless subchapter.hidden == true %}
+							{% unless subchapter.hidden == true or subchapter.title contains ' Item' or subchapter.title contains ' Title' %}
 								{% if subchapter.url contains 'chapters' and subchapter.url contains chapter_path_component  %}
 									<li>
 										<a href="#{{subchapter.url}}">
-											{{chapter.order}}.{{subchapter.title}}
+											{{subchapter.title}}
 										</a>
 									</li>
 								{% endif %}
@@ -43,11 +50,11 @@
 						</ul>
 					</div>
 				{% endunless %}
-
-		{% endfor %}
+			{% endfor %}
+		</div>
 
 <!-- loop through root chapters -->
-{% for chapter in site.documentation %}
+{% for chapter in docs %}
 	{% unless chapter.hidden == true or chapter.url contains 'chapters' %}
 
 		<!-- for each root chapter, work out the identifying path component

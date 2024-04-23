@@ -1,7 +1,9 @@
 ---
+title: 7.2. Load Song
+
 ---
 
-## 7.2. Load Song
+## {{ page.title }}
 
 {% flexible_image link="menu-load-song.png" alt="Load song screen" %}
 

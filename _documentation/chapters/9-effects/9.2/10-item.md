@@ -1,7 +1,3 @@
----
-title: Freeverb
----
-
 {% flexible_image link="effect-freeverb.png" alt="Freeverb effect" %}
 
 ### FREEVERB

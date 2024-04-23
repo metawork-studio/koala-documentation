@@ -1,7 +1,3 @@
----
-title: Drive
----
-
 {% flexible_image link="effect-drive.png" alt="Drive" %}
 
 ### DRIVE

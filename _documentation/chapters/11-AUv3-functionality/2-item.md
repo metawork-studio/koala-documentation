@@ -1,4 +1,5 @@
 ---
+title: 11.2. AUv3 Effect (input captured)
 ---
 
 ## 11.2. AUv3 Effect (input captured)

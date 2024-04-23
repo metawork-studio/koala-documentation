@@ -1,7 +1,8 @@
 ---
+title: 5.1. Sequencer Controls
 ---
 
-## 5.1. Sequencer Controls
+## {{ page.title }}
 
 {% flexible_image link="sequence-idle.png" alt="Sequence screen" %}
 

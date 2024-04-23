@@ -1,7 +1,3 @@
----
-title: Pitch Shift
----
-
 {% flexible_image link="effect-pitch-shift.png" alt="Pitch shift effect" %}
 
 ### PITCH SHIFT

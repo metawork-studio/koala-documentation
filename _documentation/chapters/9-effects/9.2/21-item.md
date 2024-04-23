@@ -1,7 +1,3 @@
----
-title: Tape Delay
----
-
 {% flexible_image link="effect-tape-delay.png" alt="Tape delay effect" %}
 
 ### TAPE DELAY

@@ -1,7 +1,9 @@
 ---
+title: 7.1. Create New Song
+
 ---
 
-## 7.1. Create New Song
+## {{ page.title }}
 
 {% flexible_image link="menu-new-song.png" alt="New Song" %}
 
