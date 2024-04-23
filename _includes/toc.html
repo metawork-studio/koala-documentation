@@ -50,10 +50,11 @@
                                 {% continue %}
                             {% endif %}
 
-                            {% assign subchapter_url_name = subchapter.url | split: '/' | last | split: '.' | first %}
+                            {% assign subchapter_url_parts = subchapter.content | split: '"'  %}
+                            {% assign subchapter_url_name = subchapter_url_parts[1] %}
                                 <li>
                                     <a href="{{chapter.url | append: '#' | append: subchapter_url_name | relative_url}}">
-                                        {{subchapter.title}}
+                                        {{subchapter.title}} 
                                     </a>
                                 </li>
                             
