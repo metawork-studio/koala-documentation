@@ -1,3 +1,5 @@
+---
+---
 {% flexible_image link="effect-filter.png" alt="Filter effect" %}
 
 ### FILTER

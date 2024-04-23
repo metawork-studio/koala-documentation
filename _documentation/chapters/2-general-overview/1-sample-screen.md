@@ -2,7 +2,7 @@
 title: 2.1. Sample Screen
 ---
 
-## {{ page.title }}
+## 2.1. Sample Screen
 {% flexible_image link="sample-monitoring-active.png" alt="Sample screen" %}
 
 Sample screen is used to load samples to the pads, manipulate samples and for resampling.

@@ -2,7 +2,7 @@
 title: 7.3. Save and Save As
 ---
 
-## {{ page.title }}
+## 7.3. Save and Save As
 
 {% flexible_image link="menu-save-as.png" alt="Save as dialog" %}
 

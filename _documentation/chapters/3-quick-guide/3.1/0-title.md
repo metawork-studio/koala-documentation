@@ -2,4 +2,4 @@
 title: 3.1. Add samples to pads
 ---
 
-## {{ page.title }}
+## 3.1. Add samples to pads

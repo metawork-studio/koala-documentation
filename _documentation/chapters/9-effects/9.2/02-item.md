@@ -1,3 +1,5 @@
+---
+---
 {% flexible_image link="effect-bandpass.png" alt="Bandpass effect" %}
 
 ### BANDPASS

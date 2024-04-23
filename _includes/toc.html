@@ -42,17 +42,17 @@
                     <ul class="documentation-item-nav">
                     {% for subchapter in chapters %}
                         {% if subchapter.url contains 'chapters' and subchapter.url contains chapter_path_component  %}
-                        {% if subchapter.hidden == true %}
-                            {% continue %}
-                        {% endif %}
+                            {% if subchapter.hidden == true %}
+                                {% continue %}
+                            {% endif %}
 
-                        {% if subchapter.title contains ' Item' or subchapter.title contains ' Title' %}
-                            {% continue %}
-                        {% endif %}
+                            {% if subchapter.title contains ' Item' or subchapter.title contains ' Title' %}
+                                {% continue %}
+                            {% endif %}
 
-                            
+                            {% assign subchapter_url_name = subchapter.url | split: '/' | last | split: '.' | first %}
                                 <li>
-                                    <a href="{{subchapter.url | relative_url}}">
+                                    <a href="{{chapter.url | append: '#' | append: subchapter_url_name | relative_url}}">
                                         {{subchapter.title}}
                                     </a>
                                 </li>

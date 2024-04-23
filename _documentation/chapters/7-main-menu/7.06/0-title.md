@@ -2,4 +2,4 @@
 title: 7.6. Export
 ---
 
-## {{ page.title }}
+## 7.6. Export

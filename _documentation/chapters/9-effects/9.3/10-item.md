@@ -1,3 +1,5 @@
+---
+---
 {% flexible_image link="background-fx-mirror.png" alt="Background FX Mirror" %}
 
 ### MIRROR

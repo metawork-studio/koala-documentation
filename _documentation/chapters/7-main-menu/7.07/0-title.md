@@ -2,7 +2,7 @@
 title: 7.7. Export Options
 ---
 
-## {{ page.title }}
+## 7.7. Export Options
 
 * CURRENT SAMPLE: export currently selected pad as a WAV file. 
 * ALL SAMPLES: export a zipped file with all samples from the song.

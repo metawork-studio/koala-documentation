@@ -2,7 +2,7 @@
 title: 5.3. Tempo Menu
 ---
 
-## {{ page.title }}
+## 5.3. Tempo Menu
 
 {% flexible_image link="sequence-bpm-menu.png" alt="BPM Tempo" %}
 

@@ -2,7 +2,7 @@
 title: 5.2. Timeline Controls
 ---
 
-## {{ page.title }}
+## 5.2. Timeline Controls
 
 {% flexible_image link="sequence-play.png" alt="Timeline controls" %}
 

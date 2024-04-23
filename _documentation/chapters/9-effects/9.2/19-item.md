@@ -1,3 +1,5 @@
+---
+---
 {% flexible_image link="effect-ring-mod.png" alt="Ring mod effect" %}
 
 ### RING MOD

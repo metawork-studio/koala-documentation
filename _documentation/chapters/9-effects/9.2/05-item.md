@@ -1,3 +1,5 @@
+---
+---
 {% flexible_image link="effect-delay.png" alt="Delay effect" %}
 
 ### DELAY

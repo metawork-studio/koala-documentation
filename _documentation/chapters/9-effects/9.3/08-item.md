@@ -1,3 +1,5 @@
+---
+---
 {% flexible_image link="background-fx-glitch.png" alt="Background FX Glitch" %}
 
 ### GLITCH
