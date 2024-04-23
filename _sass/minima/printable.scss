@@ -1,0 +1,40 @@
+.printable * {
+    background-color: white;
+    color: black;
+}
+.printable {
+    line-height: 1.5;
+}
+.printable a {
+    text-decoration: underline;
+}
+
+.printable footer {
+    text-align: center;
+    padding: 2em;
+}
+.printable .chapter {
+    border-top: 1px solid black;
+    padding-top: 1em;
+}
+
+.printable .subchapter {
+    border-top: 1px dotted black;
+    padding-top: 1em;
+}
+
+h1 {
+    font-size: 5rem;
+}
+.chapter h2 {
+    font-size: 3rem;
+}
+.subchapter h2 {
+font-size: 2rem;
+}
+
+.printable .updateDate {
+    font-size: 0.75rem;
+    text-align: right;
+    font-style: italic;
+}

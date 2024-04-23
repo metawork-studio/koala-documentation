@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+
+{%- include head.html -%}
+<body class="printable">
+
+
+<main class="page-content" aria-label="Content">
+	<div class="container">
+		<h1>KOALA SAMPLER MANUAL</h1>
+
+		<div class="updateDate">Last updated: {{ site.time | date: '%A, %B %d, %Y' }}</div>
+		<!-- loop through root chapters -->
+		{% for chapter in site.documentation %}
+			{% unless chapter.hidden == true or chapter.url contains 'chapters' %}
+
+				<!-- for each root chapter, work out the identifying path component
+						e/g. '2-general-overview' -->
+					{% assign chapter_path_component = chapter.url | split: '/' | slice: 2, 1 | first | split: '.'| first %}
+
+
+					<div class="documentation-item">
+						<a href="#{{ chapter_path_component }}">
+							{{chapter.order}}. {{ chapter.title }}
+						</a>
+
+						
+						<ul>
+							<!-- now search for that path component in any path that also has 'chapters'
+							and we've found the subchapters -->
+						{% for subchapter in site.documentation %}
+							{% unless subchapter.hidden == true %}
+								{% if subchapter.url contains 'chapters' and subchapter.url contains chapter_path_component  %}
+									<li>
+										<a href="#{{subchapter.url}}">
+											{{chapter.order}}.{{subchapter.title}}
+										</a>
+									</li>
+								{% endif %}
+							{% endunless %}
+						{% endfor %}
+
+						</ul>
+					</div>
+				{% endunless %}
+
+		{% endfor %}
+
+<!-- loop through root chapters -->
+{% for chapter in site.documentation %}
+	{% unless chapter.hidden == true or chapter.url contains 'chapters' %}
+
+		<!-- for each root chapter, work out the identifying path component
+			e/g. '2-general-overview' -->
+			{% assign chapter_path_component = chapter.url | split: '/' | slice: 2, 1 | first | split: '.'| first %}
+
+		<div class="chapter">
+			<h2 id="{{ chapter_path_component }}">
+				{{chapter.order}}. {{ chapter.title }}
+			</h2>
+			{{ chapter.content }}
+			
+				<!-- now search for that path component in any path that also has 'chapters'
+				and we've found the subchapters -->
+			{% for subchapter in site.documentation %}
+				{% unless subchapter.hidden == true %}
+					{% if subchapter.url contains 'chapters' and subchapter.url contains chapter_path_component  %}
+						<div class="subchapter" id="{{subchapter.url}}">
+							{{ subchapter.content }}
+						</div>
+					{% endif %}
+				{% endunless %}
+			{% endfor %}
+
+		</div>
+	{% endunless %}
+{% endfor %}
+
+
+	</div>
+</main>
+	<footer>&copy; {{ site.time | date: '%Y' }} <a href="https://www.elf-audio.com/">elf audio</a></footer>
+</body>
+</html>
