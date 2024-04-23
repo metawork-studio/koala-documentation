@@ -14,13 +14,11 @@ rm _site/requirements.txt
 rm _site/screenshot.png
 rm _site/generate-pdf.js
 rm _site/readme_banner.svg
-
-rm _site/readme_banner.svg
 rm -Rf _site/script
 
 echo "starting webserver for pdf generation"
 # Start Python's HTTP server in the background
-python -m http.server --directory "$DIR_TO_SERVE" 1843 &
+python -m http.server --directory "_site" 1843 &
 # Save the PID of the server so we can kill it later
 SERVER_PID=$!
 
