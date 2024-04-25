@@ -14,6 +14,7 @@ rm _site/requirements.txt
 rm _site/screenshot.png
 rm _site/generate-pdf.js
 rm _site/readme_banner.svg
+rm -Rf _site/canvases
 rm -Rf _site/script
 
 echo "starting webserver for pdf generation"
