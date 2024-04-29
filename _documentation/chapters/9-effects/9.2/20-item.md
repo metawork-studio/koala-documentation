@@ -1,6 +1,5 @@
 ---
 ---
-
 {% flexible_image link="effect-sidechain.png" alt="Sidechain effect" %}
 
 ### SIDECHAIN

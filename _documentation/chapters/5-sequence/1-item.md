@@ -1,4 +1,5 @@
 ---
+title: 5.1. Sequencer Controls
 ---
 
 ## 5.1. Sequencer Controls

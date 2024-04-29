@@ -1,0 +1,61 @@
+.printable * {
+    background-color: white;
+    color: black;
+}
+.printable {
+    line-height: 1.5;
+}
+.printable a {
+    text-decoration: underline;
+}
+
+.printable footer {
+    text-align: center;
+    padding: 2em;
+}
+
+.front-page {
+    page-break-after: always;
+}
+
+.toc {
+    page-break-after: always;
+}
+
+.printable .chapter {
+    page-break-before: always;
+    // border-top: 1px solid black;
+    padding-top: 1em;
+}
+
+.printable .subchapter {
+    border-top: 1px dotted black;
+    padding-top: 1em;
+    margin-top: 4em;
+}
+
+.printable h1 {
+    font-size: 7rem;
+border: 1px black solid;
+    padding: 0.125em;
+    line-height: 1em;
+}
+.printable h2 {
+    font-size: 3rem;
+
+    padding-left: 0.25em;
+    padding-top: 3em;
+    border: 1px black solid;
+
+}
+.subchapter h2 {
+font-size: 2rem;
+border:0;
+padding: 0;
+}
+
+.printable .updateDate {
+    font-size: 0.75rem;
+    text-align: right;
+    font-style: italic;
+}

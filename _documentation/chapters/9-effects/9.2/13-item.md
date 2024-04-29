@@ -1,6 +1,5 @@
 ---
 ---
-
 {% flexible_image link="effect-lo-cut.png" alt="Lo cut effect" %}
 
 ### LO-CUT

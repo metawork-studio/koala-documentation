@@ -1,4 +1,5 @@
 ---
+title: 8.3. MIDI Settings
 ---
 
 ## 8.3. MIDI Settings

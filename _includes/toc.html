@@ -1,0 +1,86 @@
+
+{% if page.collection %}
+    {% assign chapters = site[page.collection] | sort: 'order' %}
+{% else %}
+    {% assign chapters = site.mobile | sort: 'order' %}
+{% endif %}
+
+{% assign counter = 0 %}
+
+{{half_count}}
+
+{% assign total_iterations = 0 %}
+
+{% for chapter in chapters %}
+    {% unless chapter.url contains 'chapters' or chapter.hidden == true %}
+        {% assign total_iterations = total_iterations | plus: 1 %}
+    {% endunless %}
+{% endfor %}
+
+{% assign half_count = total_iterations | divided_by: 2 | floor %}
+
+<div class="documentation-items-wrapper">
+    <div id="documentation-items" class="documentation-items row">
+
+        {% for chapter in chapters %}
+
+            {% unless chapter.url contains 'chapters' or chapter.hidden == true %}
+
+                {% assign counter = counter | plus: 1 %}
+
+                {% if counter == 1 %}
+                    <div class="col-md-6">
+                {% endif %}
+
+                <div class="documentation-item" data-page-url="{{ chapter.url | relative_url }}">
+                    <a class="root-section" href="{{ chapter.url | relative_url }}">
+                        {{chapter.order}}. {{ chapter.title }}
+                    </a>
+
+                    {% assign chapter_path_component = chapter.url | split: '/' | slice: 2, 1 | first | split: '.'| first %}
+                    <!-- now find the children -->
+                    <ul class="documentation-item-nav">
+                    {% for subchapter in chapters %}
+                        {% if subchapter.url contains 'chapters' and subchapter.url contains chapter_path_component  %}
+                            {% if subchapter.hidden == true %}
+                                {% continue %}
+                            {% endif %}
+
+                            {% if subchapter.title contains ' Item' or subchapter.title contains ' Title' %}
+                                {% continue %}
+                            {% endif %}
+
+                            {% assign subchapter_url_parts = subchapter.content | split: '"'  %}
+                            {% assign subchapter_url_name = subchapter_url_parts[1] %}
+                                <li>
+                                    <a href="{{chapter.url | append: '#' | append: subchapter_url_name | relative_url}}">
+                                        {{subchapter.title}} 
+                                    </a>
+                                </li>
+                            
+                        {% endif %}
+                    {% endfor%}
+
+                    </ul>
+
+
+
+                </div>
+
+                {% if counter == half_count %}
+                    </div>
+                    <div class="col-md-6">
+                {% endif %}
+
+                {% if counter.last %}
+                    </div>
+                {% endif %}
+
+
+            {% endunless %}
+
+        {% endfor %}
+    </div>
+</div>
+
+

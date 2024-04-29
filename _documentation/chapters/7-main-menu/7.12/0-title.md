@@ -1,4 +1,5 @@
 ---
+title: 7.12. Get Live Lite
 ---
 
 ## 7.12. Get Live Lite

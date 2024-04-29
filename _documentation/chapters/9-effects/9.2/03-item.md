@@ -1,6 +1,5 @@
 ---
 ---
-
 {% flexible_image link="effect-bitcooker.png" alt="Bitcooker effect" %}
 
 ### BITCOOKER

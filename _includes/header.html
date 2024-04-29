@@ -5,5 +5,10 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    
+    {%- include search-bar.html -%}
   </div>
 </header>
+    {% if page.url contains 'mobile' or page.url contains 'tablet' %}
+    {%- include documentation/mobile-tablet-switcher.html -%}
+    {% endif %}

@@ -1,4 +1,5 @@
 ---
+title: 3.3. Perform a Song
 ---
 
 ## 3.3. Perform a Song

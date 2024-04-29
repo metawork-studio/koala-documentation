@@ -1,6 +1,5 @@
 ---
 ---
-
 {% flexible_image link="effect-mic.png" alt="Mic effect" %}
 
 ### MIC

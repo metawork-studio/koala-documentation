@@ -1,4 +1,5 @@
 ---
+title: 2.2. Sequence Screen
 ---
 
 ## 2.2. Sequence Screen
