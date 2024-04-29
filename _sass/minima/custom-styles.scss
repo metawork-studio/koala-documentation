@@ -3,17 +3,151 @@
 body {
   background-image: var(--background_image);
   color: $body-color;
-  background-color: #283838;
+  background-color: #212121;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 30px;
-  }
+// @media screen and (min-width: 768px) {
+//   body {
+//     font-size: 30px;
+//   }
+// }
+/* overriding minima begin */
+body {
+    font-size: 18px;
+    line-height: 1.7em;
+}
+.site-header {
+    border-top: 0;
+    border-bottom: 1px #ffffff33 solid;
+}
+@include media-query($on-palm) {
+    .site-title {
+        padding-right: 0;
+    }
+}
+.post-content h1 {
+    font-size: 1rem;
+}
+.post-content h2 {
+    font-size: 1.5rem;
+}
+
+.social-media-list li {
+    margin: 1em;
+}
+.social-media-list li a {
+    border: 0;
+    padding: 0;
+}
+
+.social-media-list li a:hover svg.grey {
+    color: $primary-color;
+}
+.social-media-list li a svg {
+    width: 2em;
+    height: 2em;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.page-content {
+    padding: 1em 0;
+}
+/* overriding minima end */
+
+.site-footer {
+    text-align: center;
+}
+.elf-link {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.elf-link img {
+    width: 3em;
+}
+
+.hoverSpin {
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+}
+
+.hoverSpin:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+p {
+    margin-bottom: 1em;
+}
+.appStoreLinks {
+text-align: center;
+margin-bottom: 1em;
+}
+.appStoreLinks img {
+    width: 8em;
+}
+
+ul.documentation-item-nav {
+    list-style: none;
+}
+ul.documentation-item-nav li::before {
+    content: "\2022";
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    }
+
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.documentation-single-article-header-switcher {
+    margin-top: 0.5em;
+    text-align: right;
+}
+
+
+@include media-query($on-palm) {
+    .site-header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .searchbox {margin-bottom: 1em;}
+    .documentation-single-article-header-switcher {
+        text-align: center;
+    }
+    
+}
+
+h1, h2, h3, h4, a.site-title {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  
+}
+h1, h2, h3 {
+    color: white;
+}
+.site-title {
+    color: $primary-color;
 }
 
 a {
-  color: #d0d0d0;
+  color: $primary-color;
+}
+.root-section {
+    font-size: 1.5em;
+    display: block;
+    // border-bottom: 1px white solid;
+}
+a:hover {
+    color: $primary-color;
 }
 
 strong, b {
@@ -40,15 +174,15 @@ pre > code {
   }
 }
 
-.img-border,
-.img-placeholder,
-.documentation-content img {
-  box-sizing: border-box;
+// .img-border,
+// .img-placeholder,
+// .documentation-content img {
+//   box-sizing: border-box;
 
-  @media screen and (max-width: 1199px) {
-    padding: 10px;
-  }
-}
+//   @media screen and (max-width: 1199px) {
+//     padding: 10px;
+//   }
+// }
 
 .img-placeholder {
   border-color: transparent !important;
@@ -58,23 +192,14 @@ pre > code {
   max-width: 40% !important;
 }
 
-.smaller {
-  font-size: 0.6em;
-}
-
 blockquote {
   border-color: $primary-color;
   color: $body-color;
   padding: 10px;
   margin: 20px 0;
-  font-size: 28px;
 }
 
-@media screen and (min-width: 768px) {
-  blockquote {
-    font-size: 20px;
-  }
-}
+
 
 .img-fluid,
 .documentation-content img {
@@ -92,7 +217,6 @@ blockquote {
 
 .documentation {
   &-items {
-    font-size: 32px;
     font-weight: 300;
     scroll-margin-top: 60px;
   }
@@ -107,9 +231,6 @@ blockquote {
     margin: 140px 0 80px;
     text-align: center;
 
-    a {
-      font-size: 26px;
-    }
   }
 
   &-single-article {
@@ -119,14 +240,14 @@ blockquote {
       align-items: baseline;
       margin-bottom: 50px;
 
-      @media screen and (max-width: 991px) {
+      @media screen and (max-width: 600px) {
         flex-direction: column-reverse;
       }
 
       a {
         text-align: right;
-        @media screen and (max-width: 991px) {
-          margin-bottom: 0.25em;
+        @media screen and (max-width: 600px) {
+          margin-bottom: 10px;
         }
       }
     }
@@ -141,28 +262,17 @@ blockquote {
   margin-bottom: 40px;
 }
 
-.documentation-single-article-header-switcher {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
 
-//
-.documentation-single-article-header-switcher-item {
-  font-size: 0.6em;
-}
 
-.documentation-single-article-header-switcher-item-active {
-
-  background-color: #fff;
-  border-radius: 150%;
-  padding: 8px;
+.documentation-single-article-header-switcher a:hover, .documentation-single-article-header-switcher .other-option {
+    text-decoration: underline;
+    color: white;
 }
 
 .documentation-single-article-header-menu {
   margin-bottom: 20px;
   @media screen and (min-width: 992px) {
-    text-align: right;
+    // text-align: right;
   }
 }
 
@@ -172,13 +282,8 @@ blockquote {
 
 .documentation-item {
   &-nav {
-    font-size: 20px;
     margin-top: 12px;
 
-    li {
-      list-style-type: none;
-    }
-    
     a {
       padding-top: 8px;
       padding-bottom: 8px;
@@ -250,3 +355,56 @@ blockquote {
     }
   }
 }
+
+
+#searchresults {padding-top: 0.2rem;}
+.searchresult {padding-bottom: 1rem;}
+.searchresult .title {color: $primary-color;}
+.searchresult .url {color: silver;}
+.searchresult a {display: block; color: #ddd;}
+.searchresult a:hover, .searchresult a:focus {text-decoration: none;}
+.searchresult a:hover .title {text-decoration: underline;}
+
+.searchbox {
+    background-color: #222;
+    color: white;
+    border:  1px #ffffff33 solid;
+    border-radius: 0.5em;
+    padding: 0;
+    display: flex;
+    height: 2em;
+    line-height: 1rem;
+
+}
+.searchbox:hover {
+    border: 1px #ffffff66 solid;
+    background-color: #333;
+}
+
+.searchbox:active {
+    border: 1px #ffffff33 solid;
+
+}
+input[type="text"] {
+    font-size: 1em;
+    background-color: transparent;
+    // margin: 0;
+    color: white;
+    padding: 0 0 0 0.5em;
+    height: 100%;
+    
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-left: 1px #ffffff33 solid;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.searchbox svg {
+    width: 1em;
+    height: 1em;
+    margin: 0.5em;
+}
+
+    

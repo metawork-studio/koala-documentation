@@ -1,6 +1,5 @@
 ---
 ---
-
 {% flexible_image link="effect-hi-cut.png" alt="Hi cut effect" %}
 
 ### HI-CUT

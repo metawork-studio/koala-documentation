@@ -1,4 +1,5 @@
 ---
+title: 7.10. Settings
 ---
 
 ## 7.10. Settings

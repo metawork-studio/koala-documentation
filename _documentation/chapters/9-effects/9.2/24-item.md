@@ -1,6 +1,5 @@
 ---
 ---
-
 {% flexible_image link="effect-warble.png" alt="Warble effect" %}
 
 ### WARBLE

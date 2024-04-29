@@ -1,4 +1,6 @@
 ---
+title: 7.2. Load Song
+
 ---
 
 ## 7.2. Load Song

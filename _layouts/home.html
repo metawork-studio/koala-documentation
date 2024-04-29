@@ -3,30 +3,25 @@ layout: base
 ---
 
 <div class="home">
-  <div class="row gy-5">
-    <div class="col-md-6">
-      <div class="home-documentation-item">
-        <a href="{{ '/mobile/' | relative_url }}">
-          <div class="home-documentation-item-image">
-            <img height="400" src="{{ site.baseurl }}/assets/images/phone.png" alt="Mobile Documentation" class="">
-          </div>
-          <div class="home-documentation-item-title">
-            Mobile Documentation
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="home-documentation-item">
-        <a href="{{ '/tablet/' | relative_url }}">
-          <div class="home-documentation-item-image">
-            <img height="400" src="{{ site.baseurl }}/assets/images/tablet/tablet.png" alt="Tablet Documentation" class="">
-          </div>
-          <div class="home-documentation-item-title">
-            Tablet Documentation
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
+    <center><img src="/assets/images/justkoala.svg" style="height: 12em;margin-bottom: 1em" /></center>
+  <!-- <h3>Welcome to the Koala Sampler Manual!</h3> -->
+  <p>
+    Congrats on your new Koala Sampler! This manual will help you 
+    learn about both the basics and more advanced features. It's 
+    a work in progress so if you have any feedback, please get in 
+    touch <a href="https://www.koalasampler.com/contact/">here</a>.
+    If you'd like to contribute, you can do so via <a href="https://github.com/elf-audio/koala-documentation">GitHub</a>.
+    You can also download a one page PDF version of this manual <a href="koala-sampler-manual.pdf">here</a>.
+</p>
+<hr /> 
+ {%- include toc.html -%}
+ <hr />
+ <h2>Credits:</h2>
+     <p>
+         <strong>Author:</strong> Nikolai Sokolov aka <a href="https://soundcloud.com/baer_of_sidechain">Baer of Sidechain</a><br />
+         <strong>Layout:</strong> Alex Aleksandrov<br />
+         <strong>Coding:</strong> Stas Pyshevski<br />
+         <strong>URL:</strong> <a href="https://metawork.studio">metawork.studio</a>
+     </p>
+ 
 </div>

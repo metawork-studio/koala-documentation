@@ -1,4 +1,5 @@
 ---
+title: 7.1. Create New Song
 ---
 
 ## 7.1. Create New Song

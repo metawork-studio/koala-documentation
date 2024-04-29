@@ -1,4 +1,5 @@
 ---
+title: 2.1. Sample Screen
 ---
 
 ## 2.1. Sample Screen

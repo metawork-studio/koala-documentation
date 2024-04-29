@@ -41,3 +41,5 @@ Gemfile.lock
 .Trashes
 ehthumbs.db
 Thumbs.db
+.vscode/*
+koala-sampler-manual.pdf

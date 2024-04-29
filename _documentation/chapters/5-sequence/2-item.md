@@ -1,4 +1,5 @@
 ---
+title: 5.2. Timeline Controls
 ---
 
 ## 5.2. Timeline Controls

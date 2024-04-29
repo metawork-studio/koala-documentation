@@ -1,4 +1,5 @@
 ---
+title: 11.3. Multi-Bus AUv3 Mode
 ---
 
 ## 11.3. Multi-Bus AUv3 Mode
